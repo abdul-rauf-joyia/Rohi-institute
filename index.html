@@ -13,12 +13,15 @@
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
-        /* Sections Styling */
+        /* Hero Section */
         .hero { background: #eef2f7; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
+        .hero h2 { font-size: 2.2em; color: var(--primary); margin-bottom: 10px; }
+
+        /* Titles & Layout */
         .section-title { text-align: center; margin: 50px 0 30px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         
-        /* Cards */
+        /* Cards Styling */
         .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; }
         .course-card:hover { transform: translateY(-10px); }
         .course-card img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
@@ -30,6 +33,12 @@
         .form-group label { font-weight: bold; display: block; margin-bottom: 5px; }
         .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
         .submit-btn { background: var(--secondary); color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1em; font-weight: bold; width: 100%; transition: 0.3s; }
+
+        /* Gallery Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
+        .gallery-item { border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 4px solid white; }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        .gallery-item p { background: white; margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
 
         /* Floating WhatsApp */
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
@@ -74,118 +83,61 @@
         <button type="submit" class="submit-btn">SUBMIT ADMISSION FORM</button>
     </form>
 </div>
-<!-- Section: Campus Life Gallery -->
-<div class="section-title">Campus Life & Gallery</div>
-<section class="course-group" style="background: #fff;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; width: 100%; max-width: 1200px; padding: 0 20px;">
-        
-        <!-- Pic 1 -->
-        <div class="course-card">
-            <img src="gallery1.jpg" alt="Lab Activity">
-            <div class="course-card-content"><p>Computer Lab Session</p></div>
-        </div>
 
-        <!-- Pic 2 -->
-        <div class="course-card">
-            <img src="gallery2.jpg" alt="Workshop">
-            <div class="course-card-content"><p>Practical Training Workshop</p></div>
-        </div>
-
-        <!-- Pic 3 -->
-        <div class="course-card">
-            <img src="gallery3.jpg" alt="Event">
-            <div class="course-card-content"><p>Certification Ceremony</p></div>
-        </div>
-
-        <!-- Pic 4 -->
-        <div class="course-card">
-            <img src="gallery4.jpg" alt="Classroom">
-            <div class="course-card-content"><p>Theory Lectures</p></div>
-        </div>
-
-        <!-- Pic 5 -->
-        <div class="course-card">
-            <img src="gallery5.jpg" alt="Campus">
-            <div class="course-card-content"><p>Campus Environment</p></div>
-        </div>
-
-        <!-- Pic 6 -->
-        <div class="course-card">
-            <img src="gallery6.jpg" alt="Students">
-            <div class="course-card-content"><p>Student Group Discussion</p></div>
-        </div>
-
+<!-- Section: Campus Gallery -->
+<div class="section-title">Institute Gallery</div>
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="gallery1.jpg" alt="Director Samad Joyia">
+        <p>Director Samad Joyia</p>
     </div>
-</section>
+    <div class="gallery-item">
+        <img src="beauty-lab.jpg" alt="Beauty Lab">
+        <p>Beauty Therapy Lab</p>
+    </div>
+    <div class="gallery-item">
+        <img src="comp-lab.jpg" alt="Computer Lab">
+        <p>IT & Computer Lab</p>
+    </div>
+    <div class="gallery-item">
+        <img src="office.jpg" alt="Institute Office">
+        <p>Institute Office</p>
+    </div>
+</div>
 
-<!-- Section 1: Beauty Dept -->
-<div class="section-title">Beauty & Styling Dept.</div>
+<!-- Section: Courses -->
+<div class="section-title">Our Departments</div>
 <section class="course-group">
     <div class="course-card">
         <img src="beauty.jpg" alt="Beauty">
-        <div class="course-card-content"><h3>Beauty Therapy</h3><p>Professional skin care & makeup.</p></div>
+        <div class="course-card-content"><h3>Beauty Dept</h3><p>Professional Skin & Hair Care.</p></div>
     </div>
     <div class="course-card">
-        <img src="hair.jpg" alt="Hair">
-        <div class="course-card-content"><h3>Hair Styling</h3><p>Advanced cutting & styling.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="skin.jpg" alt="Skin">
-        <div class="course-card-content"><h3>Skin Care</h3><p>Dermatology treatments.</p></div>
+        <img src="web-dev.jpg" alt="IT">
+        <div class="course-card-content"><h3>IT Dept</h3><p>Digital Marketing & Coding.</p></div>
     </div>
 </section>
 
-<!-- Section 2: IT Dept -->
-<div class="section-title">IT & Digital Media Dept.</div>
-<section class="course-group" style="background: #eef2f7;">
-    <div class="course-card">
-        <img src="digital-marketing.jpg" alt="Digital Marketing">
-        <div class="course-card-content"><h3>Digital Marketing</h3><p>SEO & Social Media Ads.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="ecom.jpg" alt="E-commerce">
-        <div class="course-card-content"><h3>E-commerce</h3><p>Online Stores & Dropshipping.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="web-dev.jpg" alt="Web Development">
-        <div class="course-card-content"><h3>Web Development</h3><p>Web Designing & Coding.</p></div>
-    </div>
-</section>
-
-<!-- Section: Google Rating -->
-<div class="section-title">Student Reviews</div>
-<section style="text-align: center; padding: 20px;">
-    <div style="font-size: 30px; color: #ffcc00;">★★★★★</div>
-    <p><strong>5.0 Google Rating</strong> - Based on student feedback at Rohi VTTI Multan.</p>
-</section>
-
-<!-- Section: Live Map & Contact -->
-<div class="section-title" id="location-section">Our Location</div>
+<!-- Section: Location & Map -->
+<div class="section-title">Our Location</div>
 <section style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; max-width: 1100px; margin: auto;">
-    <!-- Updated Fixed Google Map Iframe -->
     <div style="flex: 1; min-width: 300px; height: 350px; border-radius: 15px; overflow: hidden; border: 4px solid #eee;">
-        <iframe 
-            src="https://google.com" 
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div style="flex: 1; min-width: 300px; background: var(--dark); color: white; padding: 30px; border-radius: 15px;">
-        <h3 style="color: #ffcc00;">Contact Us</h3>
+        <h3 style="color: #ffcc00;">Contact Details</h3>
         <p><strong>Director:</strong> Samad Joyia</p>
         <p><strong>Phone:</strong> 0302-0757793</p>
         <p><strong>Address:</strong> Samad House, Street No 1, Vehari Road, Multan.</p>
-        <a href="https://google.com" target="_blank" style="display: inline-block; margin-top: 10px; color: #ffcc00; text-decoration: none; font-weight: bold;">Open in Google Maps →</a>
+        <a href="https://google.com" target="_blank" style="color: #ffcc00; font-weight: bold; text-decoration: none;">Open in Google Maps →</a>
     </div>
 </section>
 
-<!-- Footer -->
-<footer style="background: #111; color: #888; text-align: center; padding: 40px 20px; font-size: 0.9em;">
-    &copy; 2026 Rohi Vocational & Technical Training Institute (VTTI) Multan.<br>
-    <span style="font-size: 0.8em;">Affiliated with NAVTTC | Empowering Youth with Skills.</span>
+<footer style="background: #111; color: #888; text-align: center; padding: 40px; font-size: 0.9em;">
+    &copy; 2026 Rohi VTTI Multan | Affiliated with NAVTTC
 </footer>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me, I want to inquire about admissions." class="whatsapp-float" target="_blank">W</a>
+<a href="https://wa.me" class="whatsapp-float" target="_blank">W</a>
 
 </body>
 </html>
