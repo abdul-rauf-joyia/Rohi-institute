@@ -58,9 +58,8 @@
         <p style="margin: 5px 0 0;">Affiliated with <strong>NAVTTC</strong></p>
     </div>
 
-    <!-- Right Side: NAVTTC Logo -->
-<img src="navttc-logo.png" alt="NAVTTC Logo" class="logo-img">
-
+    <!-- Right: NAVTTC Logo -->
+    <img src="https://navttc.gov.pk" alt="NAVTTC Logo" class="logo-img">
 </header>
 
 <section class="hero">
@@ -100,6 +99,61 @@
     <div class="course-card">
         <img src="web-dev.jpg" alt="Web Development">
         <div class="course-card-content"><h3>Web Development</h3><p>Full stack coding.</p></div>
+    </div>
+</section>
+<!-- Section: Professional Admission Form -->
+<section id="admission-form" style="padding: 60px 20px; background: #fff;">
+    <div style="max-width: 700px; margin: auto; background: #f8f9fa; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 8px solid var(--primary);">
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: 10px; text-transform: uppercase;">Admission Form</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">Please fill the form correctly for registration.</p>
+        
+        <!-- Form Start -->
+        <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Student Name</label>
+                    <input type="text" name="Student Name" placeholder="Enter Full Name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Father Name</label>
+                    <input type="text" name="Father Name" placeholder="Enter Father Name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">CNIC / B-Form No.</label>
+                    <input type="text" name="CNIC" placeholder="36302-xxxxxxx-x" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Contact No.</label>
+                    <input type="tel" name="Phone" placeholder="03xx-xxxxxxx" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                </div>
+            </div>
+
+            <div>
+                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Last Qualification</label>
+                <input type="text" name="Education" placeholder="e.g. Matric, Inter, BA" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Select Course</label>
+                <select name="Course" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; background: white; box-sizing: border-box;">
+                    <option value="">-- Choose Your Course --</option>
+                    <option>Beauty Therapy</option>
+                    <option>Hair Styling</option>
+                    <option>Skin Care</option>
+                    <option>Digital Marketing</option>
+                    <option>E-commerce</option>
+                    <option>Web Development</option>
+                </select>
+            </div>
+
+            <button type="submit" style="background: var(--primary); color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: 0.3s; margin-top: 10px;">
+                SUBMIT APPLICATION
+            </button>
+        </form>
     </div>
 </section>
 
