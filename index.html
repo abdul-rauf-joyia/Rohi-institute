@@ -8,7 +8,7 @@
         :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
         
-        /* Updated Header for Logos */
+        /* Header with Logos */
         header { 
             background: var(--primary); 
             color: white; 
@@ -21,9 +21,11 @@
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 80px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
+        /* Hero Section */
         .hero { background: #eef2f7; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
         .hero h2 { font-size: 2.2em; color: var(--primary); margin-bottom: 10px; }
 
+        /* Sections */
         .section-title { text-align: center; margin: 50px 0 30px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; }
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         
@@ -33,127 +35,98 @@
         .course-card-content { padding: 20px; text-align: center; }
         .course-card h3 { color: var(--primary); margin: 0 0 10px; }
 
+        /* Admission Form Styling */
+        .form-container { max-width: 700px; margin: 40px auto; background: #f8f9fa; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 8px solid var(--primary); }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { font-weight: bold; display: block; margin-bottom: 5px; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+        .submit-btn { background: var(--secondary); color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1em; font-weight: bold; width: 100%; transition: 0.3s; }
+        .submit-btn:hover { background: #218838; }
+
+        /* Footer & Contact */
         .info-box { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
         .highlight { color: #ffcc00; font-weight: bold; }
-
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-        
         footer { background: #111; color: #888; text-align: center; padding: 20px; font-size: 0.9em; }
-        
-        /* Mobile adjustment */
-        @media (max-width: 600px) {
-            header { flex-direction: column; gap: 15px; }
-            .logo-img { height: 60px; }
-        }
+
+        @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 60px; } }
     </style>
 </head>
 <body>
 
 <header>
     <!-- Left: Rohi Logo -->
-    <img src="rohi-logo.png" alt="Rohi Logo" class="logo-img">
+    <img src="rohi-logo.png" onerror="this.src='https://placehold.co'" alt="Rohi Logo" class="logo-img">
 
     <div class="header-text">
-        <h1 style="margin: 0; font-size: 1.6em;">ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
+        <h1 style="margin: 0;">ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
         <p style="margin: 5px 0 0;">Affiliated with <strong>NAVTTC</strong></p>
     </div>
 
     <!-- Right: NAVTTC Logo -->
-    <img src="https://navttc.gov.pk" alt="NAVTTC Logo" class="logo-img">
+    <img src="navttc-logo.png" onerror="this.src='https://navttc.gov.pk'" alt="NAVTTC Logo" class="logo-img">
 </header>
 
 <section class="hero">
     <h2>Our Aim: Student Success</h2>
     <p>Empowering the youth of Multan with professional skills.</p>
-    <img src="main-building.jpg" alt="Institute View" style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; border: 5px solid white;">
+    <img src="main-building.jpg" alt="Institute View" style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; border: 5px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
 </section>
 
-<!-- Beauty Section -->
-<div class="section-title">Beauty & Styling Dept.</div>
+<!-- Admission Form Section -->
+<div class="section-title">Online Admission 2024</div>
+<div class="form-container">
+    <form action="https://formspree.io" method="POST">
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" name="name" required placeholder="Enter Full Name">
+        </div>
+        <div class="form-group">
+            <label>Father Name</label>
+            <input type="text" name="father_name" required placeholder="Enter Father Name">
+        </div>
+        <div class="form-group">
+            <label>CNIC / B-Form Number</label>
+            <input type="text" name="cnic" required placeholder="36302-xxxxxxx-x">
+        </div>
+        <div class="form-group">
+            <label>Contact Number (WhatsApp)</label>
+            <input type="tel" name="phone" required placeholder="0300-0000000">
+        </div>
+        <div class="form-group">
+            <label>Last Education</label>
+            <input type="text" name="education" required placeholder="e.g. Matric, Inter, Graduate">
+        </div>
+        <div class="form-group">
+            <label>Select Course</label>
+            <select name="course" required>
+                <option value="">-- Choose Course --</option>
+                <option>Beauty Therapy</option>
+                <option>Hair Styling</option>
+                <option>Skin Care</option>
+                <option>Digital Marketing</option>
+                <option>E-commerce</option>
+                <option>Web Development</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">SUBMIT FORM</button>
+    </form>
+</div>
+
+<!-- Courses Sections -->
+<div class="section-title">Our Courses</div>
 <section class="course-group">
     <div class="course-card">
-        <img src="beauty.jpg" alt="Beauty Therapy">
-        <div class="course-card-content"><h3>Beauty Therapy</h3><p>Professional skin care and makeup.</p></div>
+        <img src="beauty.jpg" alt="Beauty">
+        <div class="course-card-content"><h3>Beauty Therapy</h3><p>Professional skin care & makeup.</p></div>
     </div>
     <div class="course-card">
-        <img src="hair.jpg" alt="Hair Styling">
-        <div class="course-card-content"><h3>Hair Styling</h3><p>Advanced cutting and styling.</p></div>
+        <img src="hair.jpg" alt="Hair">
+        <div class="course-card-content"><h3>Hair Styling</h3><p>Advanced cutting & styling.</p></div>
     </div>
     <div class="course-card">
-        <img src="skin.jpg" alt="Skin Care">
-        <div class="course-card-content"><h3>Skin Care</h3><p>Aesthetic treatments.</p></div>
-    </div>
-</section>
-
-<!-- IT Section -->
-<div class="section-title">IT & Digital Media Dept.</div>
-<section class="course-group">
-    <div class="course-card">
-        <img src="digital-marketing.jpg" alt="Digital Marketing">
-        <div class="course-card-content"><h3>Digital Marketing</h3><p>Social media and SEO.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="ecom.jpg" alt="E-commerce">
-        <div class="course-card-content"><h3>E-commerce</h3><p>Online store management.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="web-dev.jpg" alt="Web Development">
-        <div class="course-card-content"><h3>Web Development</h3><p>Full stack coding.</p></div>
-    </div>
-</section>
-<!-- Section: Professional Admission Form -->
-<section id="admission-form" style="padding: 60px 20px; background: #fff;">
-    <div style="max-width: 700px; margin: auto; background: #f8f9fa; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 8px solid var(--primary);">
-        <h2 style="text-align: center; color: var(--primary); margin-bottom: 10px; text-transform: uppercase;">Admission Form</h2>
-        <p style="text-align: center; color: #666; margin-bottom: 30px;">Please fill the form correctly for registration.</p>
-        
-        <!-- Form Start -->
-        <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-            
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <div style="flex: 1; min-width: 250px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Student Name</label>
-                    <input type="text" name="Student Name" placeholder="Enter Full Name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
-                </div>
-                <div style="flex: 1; min-width: 250px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Father Name</label>
-                    <input type="text" name="Father Name" placeholder="Enter Father Name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
-                </div>
-            </div>
-
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <div style="flex: 1; min-width: 250px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">CNIC / B-Form No.</label>
-                    <input type="text" name="CNIC" placeholder="36302-xxxxxxx-x" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
-                </div>
-                <div style="flex: 1; min-width: 250px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Contact No.</label>
-                    <input type="tel" name="Phone" placeholder="03xx-xxxxxxx" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
-                </div>
-            </div>
-
-            <div>
-                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Last Qualification</label>
-                <input type="text" name="Education" placeholder="e.g. Matric, Inter, BA" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
-            </div>
-
-            <div>
-                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Select Course</label>
-                <select name="Course" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; background: white; box-sizing: border-box;">
-                    <option value="">-- Choose Your Course --</option>
-                    <option>Beauty Therapy</option>
-                    <option>Hair Styling</option>
-                    <option>Skin Care</option>
-                    <option>Digital Marketing</option>
-                    <option>E-commerce</option>
-                    <option>Web Development</option>
-                </select>
-            </div>
-
-            <button type="submit" style="background: var(--primary); color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1em; font-weight: bold; transition: 0.3s; margin-top: 10px;">
-                SUBMIT APPLICATION
-            </button>
-        </form>
+        <img src="web-dev.jpg" alt="Web">
+        <div class="course-card-content"><h3>Web Development</h3><p>Full stack coding skills.</p></div>
     </div>
 </section>
 
@@ -169,3 +142,4 @@
 
 </body>
 </html>
+
