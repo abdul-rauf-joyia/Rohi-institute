@@ -8,39 +8,32 @@
         :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; }
         
-        /* Header & Logos */
         header { background: var(--primary); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
-        /* Hero Section */
         .hero { background: #eef2f7; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
         .hero h2 { font-size: 2.2em; color: var(--primary); margin-bottom: 10px; }
 
-        /* Titles & Layout */
         .section-title { text-align: center; margin: 50px 0 30px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         
-        /* Cards Styling */
-        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; }
+        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; transition: 0.3s; }
         .course-card:hover { transform: translateY(-10px); }
-        .course-card img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
-        .course-card-content { padding: 20px; text-align: center; }
+        .course-card img { width: 100%; height: 180px; object-fit: cover; background: #eee; }
+        .course-card-content { padding: 15px; text-align: center; }
         
-        /* Admission Form */
         .form-container { max-width: 700px; margin: 40px auto; background: #f8f9fa; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 8px solid var(--primary); }
         .form-group { margin-bottom: 15px; text-align: left; }
         .form-group label { font-weight: bold; display: block; margin-bottom: 5px; }
         .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
         .submit-btn { background: var(--secondary); color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1em; font-weight: bold; width: 100%; transition: 0.3s; }
 
-        /* Gallery Grid */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
         .gallery-item { border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 4px solid white; }
         .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
         .gallery-item p { background: white; margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
 
-        /* Floating WhatsApp */
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 
         @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
@@ -57,83 +50,71 @@
     <img src="navttc-logo.png" onerror="this.src='https://navttc.gov.pk'" alt="NAVTTC Logo" class="logo-img">
 </header>
 
+<!-- Hero -->
 <section class="hero">
     <h2>Our Aim: Student Success</h2>
-    <p>Empowering the youth of Multan with professional skills.</p>
-    <img src="main-building.jpg" alt="Institute View" style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; border: 5px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+    <img src="main-building.jpg" alt="Institute View" style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; border: 5px solid white;">
 </section>
 
-<!-- Section: Online Admission 2026 -->
+<!-- Admission Form 2026 -->
 <div class="section-title">Online Admission 2026</div>
 <div class="form-container">
     <form action="https://formspree.io" method="POST">
-        <div class="form-group"><label>Student Name</label><input type="text" name="name" required placeholder="Full Name"></div>
-        <div class="form-group"><label>Father Name</label><input type="text" name="father_name" required placeholder="Father Name"></div>
-        <div class="form-group"><label>CNIC / B-Form Number</label><input type="text" name="cnic" required placeholder="36302-xxxxxxx-x"></div>
-        <div class="form-group"><label>WhatsApp Contact</label><input type="tel" name="phone" required placeholder="0300-0000000"></div>
-        <div class="form-group"><label>Last Education</label><input type="text" name="education" required placeholder="e.g. Matric, Inter"></div>
+        <div class="form-group"><label>Student Name</label><input type="text" name="name" required></div>
+        <div class="form-group"><label>Father Name</label><input type="text" name="father_name" required></div>
+        <div class="form-group"><label>CNIC No</label><input type="text" name="cnic" required></div>
+        <div class="form-group"><label>WhatsApp No</label><input type="tel" name="phone" required></div>
+        <div class="form-group"><label>Last Education</label><input type="text" name="education" required></div>
         <div class="form-group">
-            <label>Select Course</label>
+            <label>Course</label>
             <select name="course" required>
-                <option value="">-- Choose Course --</option>
                 <option>Beauty Therapy</option><option>Hair Styling</option><option>Skin Care</option>
                 <option>Digital Marketing</option><option>E-commerce</option><option>Web Development</option>
             </select>
         </div>
-        <button type="submit" class="submit-btn">SUBMIT ADMISSION FORM</button>
+        <button type="submit" class="submit-btn">SUBMIT FORM</button>
     </form>
 </div>
 
-<!-- Section: Campus Gallery -->
+<!-- Institute Gallery -->
 <div class="section-title">Institute Gallery</div>
 <div class="gallery-grid">
-    <div class="gallery-item">
-        <img src="gallery1.jpg" alt="Director Samad Joyia">
-        <p>Director Samad Joyia</p>
-    </div>
-    <div class="gallery-item">
-        <img src="beauty-lab.jpg" alt="Beauty Lab">
-        <p>Beauty Therapy Lab</p>
-    </div>
-    <div class="gallery-item">
-        <img src="comp-lab.jpg" alt="Computer Lab">
-        <p>IT & Computer Lab</p>
-    </div>
-    <div class="gallery-item">
-        <img src="office.jpg" alt="Institute Office">
-        <p>Institute Office</p>
-    </div>
+    <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
+    <div class="gallery-item"><img src="beauty-lab.jpg"><p>Beauty Therapy Lab</p></div>
+    <div class="gallery-item"><img src="comp-lab.jpg"><p>Computer Lab</p></div>
+    <div class="gallery-item"><img src="office.jpg"><p>Institute Office</p></div>
 </div>
 
-<!-- Section: Courses -->
-<div class="section-title">Our Departments</div>
+<!-- Beauty Section -->
+<div class="section-title">Beauty & Styling Dept.</div>
 <section class="course-group">
-    <div class="course-card">
-        <img src="beauty.jpg" alt="Beauty">
-        <div class="course-card-content"><h3>Beauty Dept</h3><p>Professional Skin & Hair Care.</p></div>
-    </div>
-    <div class="course-card">
-        <img src="web-dev.jpg" alt="IT">
-        <div class="course-card-content"><h3>IT Dept</h3><p>Digital Marketing & Coding.</p></div>
-    </div>
+    <div class="course-card"><img src="beauty.jpg"><h3>Beauty Therapy</h3></div>
+    <div class="course-card"><img src="hair.jpg"><h3>Hair Styling</h3></div>
+    <div class="course-card"><img src="skin.jpg"><h3>Skin Care</h3></div>
 </section>
 
-<!-- Section: Location & Map -->
-<div class="section-title">Our Location</div>
+<!-- IT Section -->
+<div class="section-title">IT & Digital Media Dept.</div>
+<section class="course-group" style="background: #eef2f7;">
+    <div class="course-card"><img src="digital-marketing.jpg"><h3>Digital Marketing</h3></div>
+    <div class="course-card"><img src="ecom.jpg"><h3>E-commerce</h3></div>
+    <div class="course-card"><img src="web-dev.jpg"><h3>Web Development</h3></div>
+</section>
+
+<!-- Map & Contact -->
+<div class="section-title">Location</div>
 <section style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; max-width: 1100px; margin: auto;">
-    <div style="flex: 1; min-width: 300px; height: 350px; border-radius: 15px; overflow: hidden; border: 4px solid #eee;">
+    <div style="flex: 1; min-width: 300px; height: 300px; border-radius: 15px; overflow: hidden;">
         <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div style="flex: 1; min-width: 300px; background: var(--dark); color: white; padding: 30px; border-radius: 15px;">
-        <h3 style="color: #ffcc00;">Contact Details</h3>
+    <div style="flex: 1; min-width: 300px; background: var(--dark); color: white; padding: 25px; border-radius: 15px;">
         <p><strong>Director:</strong> Samad Joyia</p>
         <p><strong>Phone:</strong> 0302-0757793</p>
-        <p><strong>Address:</strong> Samad House, Street No 1, Vehari Road, Multan.</p>
-        <a href="https://google.com" target="_blank" style="color: #ffcc00; font-weight: bold; text-decoration: none;">Open in Google Maps →</a>
+        <p><strong>Address:</strong> Samad House, Vehari Road, Multan.</p>
     </div>
 </section>
 
-<footer style="background: #111; color: #888; text-align: center; padding: 40px; font-size: 0.9em;">
+<footer style="background: #111; color: #888; text-align: center; padding: 30px;">
     &copy; 2026 Rohi VTTI Multan | Affiliated with NAVTTC
 </footer>
 
