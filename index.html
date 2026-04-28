@@ -10,18 +10,15 @@
         :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; --gold: #ffcc00; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; }
         
-        /* Notice Bar */
         .notice-bar { background: #ff3333; color: white; padding: 10px; font-weight: bold; text-align: center; }
 
         header { background: var(--primary); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
-        /* Hero */
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
         .hero-content h2 { font-size: 2.5em; color: var(--gold); }
 
-        /* Timer Styling */
         .timer-section { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
         .timer-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
         .time-box { background: var(--primary); padding: 15px; border-radius: 10px; min-width: 80px; border-bottom: 4px solid var(--gold); }
@@ -30,13 +27,11 @@
 
         .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
         
-        /* Gallery Grid */
         .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
         .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
         .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
         .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); background: #fff; }
 
-        /* Courses Styling */
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
         .course-card img { width: 100%; height: 180px; object-fit: cover; }
@@ -45,9 +40,9 @@
 
         .form-container { max-width: 700px; margin: 40px auto; background: #fff1f1; padding: 30px; border-radius: 20px; border: 2px dashed #ff3333; text-align: center; }
 
-        /* Fixed WhatsApp Button with Logo */
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; text-align: center; font-size: 38px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-        .whatsapp-float i { color: white; }
+        /* WhatsApp Floating Button */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; text-align: center; font-size: 38px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
 
         @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
     </style>
@@ -55,7 +50,7 @@
 <body>
 
 <div class="notice-bar">
-    <marquee>⚠️ Batch 3 classes are currently in progress. Admissions are CLOSED. Next session will be announced soon!</marquee>
+    <marquee>⚠️ Batch 3 classes are currently in progress. Admissions are CLOSED. Stay tuned for Batch 4!</marquee>
 </div>
 
 <header>
@@ -70,13 +65,12 @@
 <section class="hero">
     <div class="hero-content">
         <h2>Our Aim: Skill Empowerment</h2>
-        <p>Hunar mand jawan, khush-haal Pakistan! Globally recognized and internationally valid certificates under PM-SYD.</p>
+        <p>Hunar mand jawan, khush-haal Pakistan! Globally recognized certificates under PM-SYD (Govt. of Pakistan).</p>
     </div>
 </section>
 
-<!-- Timer -->
 <section class="timer-section">
-    <h2 style="color: var(--gold);">Next Batch Opening In:</h2>
+    <h2 style="color: var(--gold);">Next Admission Batch Opening In:</h2>
     <div class="timer-container" id="timer">
         <div class="time-box"><span id="days">00</span><small>Days</small></div>
         <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
@@ -85,7 +79,6 @@
     </div>
 </section>
 
-<!-- Gallery -->
 <div class="section-title">Institute Gallery</div>
 <div class="gallery-grid">
     <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
@@ -93,14 +86,13 @@
     <div class="gallery-item"><img src="comp-lab.jpg"><p>IT & Computer Lab</p></div>
 </div>
 
-<!-- Admission Info -->
 <div class="section-title">Admission Status</div>
 <div class="form-container">
     <h2 style="color: #ff3333;">Registration CLOSED (Batch 3 in Progress)</h2>
-    <p>Age Limit: 18 - 40 Years | For Location: <b>Search "Rohi VTTI" on Google Maps</b></p>
+    <p>Age Limit: 18 - 40 Years | Internationally Valid Certificates</p>
+    <p><b>Search "Rohi VTTI" on Google Maps for Location</b></p>
 </div>
 
-<!-- Courses Section -->
 <div class="section-title">Free Govt. Courses (PM-SYD)</div>
 <section class="course-group">
     <div class="course-card">
@@ -138,15 +130,15 @@
 <section style="background: var(--dark); color: white; padding: 40px; text-align: center;">
     <h2 style="color: var(--gold);">Contact Rohi VTTI</h2>
     <p>Director: Samad Joyia | 0302-0757793</p>
-    <p>Samad House, St 1, Vehari Road, Multan. (Search on Google Maps)</p>
+    <p>Samad House, St 1, Vehari Road, Multan. (Google Map Verified)</p>
 </section>
 
 <footer style="background: #111; color: #888; text-align: center; padding: 20px;">
-    &copy; 2026 Rohi VTTI | PM-SYD Official Partner
+    &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
 </footer>
 
-<!-- Floating WhatsApp Icon -->
-<a href="https://wa.me" class="whatsapp-float" target="_blank">
+<!-- WhatsApp Floating Button with Official Icon -->
+<a href="https://wa.me." class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
