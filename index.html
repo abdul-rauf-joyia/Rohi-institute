@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohi Vocational Technical Training Institute | Multan</title>
-    <!-- Sab se naya aur stable Font Awesome link -->
+    
+    <!-- FIXED: Sahi Font Awesome Link (WhatsApp Logo ke liye) -->
     <link rel="stylesheet" href="https://cloudflare.com">
+
     <style>
         :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; --gold: #ffcc00; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; }
@@ -17,11 +19,11 @@
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
-        /* Hero */
+        /* Hero Section */
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
         .hero-content h2 { font-size: 2.5em; color: var(--gold); }
 
-        /* Timer */
+        /* Timer Section */
         .timer-section { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
         .timer-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
         .time-box { background: var(--primary); padding: 15px; border-radius: 10px; min-width: 80px; border-bottom: 4px solid var(--gold); }
@@ -30,22 +32,39 @@
 
         .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
         
-        /* Gallery */
+        /* Gallery Grid */
         .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
         .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
         .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
         .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
 
-        /* Courses */
+        /* Courses Styling */
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
         .course-card img { width: 100%; height: 180px; object-fit: cover; }
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
 
-        /* WhatsApp Button Fix */
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; text-align: center; font-size: 38px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 9999; display: flex !important; align-items: center; justify-content: center; text-decoration: none; }
-        .whatsapp-float i { color: white !important; font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important; font-weight: 400; font-style: normal; }
-	. 
+        /* FIXED: WhatsApp Button with Logo */
+        .whatsapp-float { 
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px; 
+            background: #25d366; 
+            color: white; 
+            width: 65px; 
+            height: 65px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 35px; 
+            text-decoration: none; 
+            z-index: 10000; 
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3); 
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover { background: #128c7e; transform: scale(1.1); }
+
         @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
     </style>
 </head>
@@ -71,6 +90,7 @@
     </div>
 </section>
 
+<!-- Timer Section -->
 <section class="timer-section">
     <h2 style="color: var(--gold);">Next Admission Batch Opening In:</h2>
     <div class="timer-container" id="timer">
@@ -81,6 +101,7 @@
     </div>
 </section>
 
+<!-- Gallery Section -->
 <div class="section-title">Institute Gallery</div>
 <div class="gallery-grid">
     <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
@@ -88,6 +109,14 @@
     <div class="gallery-item"><img src="comp-lab.jpg"><p>IT & Computer Lab</p></div>
 </div>
 
+<!-- Admission Status -->
+<div class="section-title">Admission Status</div>
+<div style="max-width: 700px; margin: 40px auto; background: #fff1f1; padding: 30px; border-radius: 20px; border: 2px dashed #ff3333; text-align: center;">
+    <h2 style="color: #ff3333;">Registration CLOSED (Batch 3 in Progress)</h2>
+    <p>Age Limit: 18 - 40 Years | For Location: <b>Search "Rohi VTTI" on Google Maps</b></p>
+</div>
+
+<!-- Courses Section -->
 <div class="section-title">Courses Duration (Batch 3)</div>
 <section class="course-group">
     <div class="course-card">
@@ -112,21 +141,23 @@
     </div>
 </section>
 
+<!-- Contact Section -->
 <section style="background: var(--dark); color: white; padding: 40px; text-align: center;">
     <h2 style="color: var(--gold);">Contact Rohi VTTI</h2>
     <p>Director: Samad Joyia | 0302-0757793</p>
-    <p>Samad House, St 1, Vehari Road, Multan. (Search on Google Maps)</p>
+    <p>Samad House, St 1, Vehari Road, Multan.</p>
 </section>
 
 <footer style="background: #111; color: #888; text-align: center; padding: 20px;">
     &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
 </footer>
 
-<!-- Updated WhatsApp Button -->
-<a href="https://wa.me/qr/4AKKO6ZRJQ6SJ1" class="whatsapp-float" target="_blank">
+<!-- FIXED: WhatsApp Floating Button with Official Icon -->
+<a href="https://wa.me" class="whatsapp-float" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
+<!-- Timer Script -->
 <script>
     const countdownDate = new Date("August 1, 2026 00:00:00").getTime();
     const x = setInterval(function() {
