@@ -29,7 +29,14 @@
 
         .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
         
-        .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        /* Gallery Grid */
+        .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
+        .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
+        .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
+        .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); background: #fff; }
+
+        /* Courses Styling */
+        .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
         .course-card img { width: 100%; height: 180px; object-fit: cover; }
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
@@ -75,6 +82,23 @@
     </div>
 </section>
 
+<!-- Institute Gallery Section (NOW BEFORE COURSES) -->
+<div class="section-title">Institute Gallery</div>
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="gallery1.jpg" alt="Director">
+        <p>Director Samad Joyia</p>
+    </div>
+    <div class="gallery-item">
+        <img src="beauty-lab.jpg" alt="Beauty Lab">
+        <p>Professional Beauty Lab</p>
+    </div>
+    <div class="gallery-item">
+        <img src="comp-lab.jpg" alt="Computer Lab">
+        <p>IT & Computer Lab</p>
+    </div>
+</div>
+
 <!-- Admission Status -->
 <div class="section-title">Admission Status</div>
 <div class="form-container">
@@ -116,14 +140,6 @@
         <div style="padding: 15px; text-align: center;"><h3>Web Development</h3><span class="duration-tag">Duration: 3 Months</span></div>
     </div>
 </section>
-
-<!-- Gallery -->
-<div class="section-title">Institute Gallery</div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px;">
-    <img src="gallery1.jpg" style="width: 300px; height: 200px; border-radius: 10px; object-fit: cover;" alt="Director">
-    <img src="beauty-lab.jpg" style="width: 300px; height: 200px; border-radius: 10px; object-fit: cover;" alt="Beauty Lab">
-    <img src="comp-lab.jpg" style="width: 300px; height: 200px; border-radius: 10px; object-fit: cover;" alt="Computer Lab">
-</div>
 
 <section style="background: var(--dark); color: white; padding: 50px 20px; text-align: center;">
     <h2 style="color: var(--gold);">Rohi VTTI Multan</h2>
