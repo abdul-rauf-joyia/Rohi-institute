@@ -35,25 +35,6 @@
         .course-card img { width: 100%; height: 180px; object-fit: cover; }
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
 
-        /* FIXED: WhatsApp Button with Internal SVG Logo */
-        .whatsapp-float { 
-            position: fixed; 
-            bottom: 30px; 
-            right: 30px; 
-            background-color: #25d366; 
-            width: 65px; 
-            height: 65px; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            box-shadow: 2px 5px 15px rgba(0,0,0,0.4); 
-            z-index: 10000; 
-            text-decoration: none; 
-            transition: 0.3s;
-        }
-        .whatsapp-float:hover { background-color: #128c7e; transform: scale(1.1); }
-
         @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
     </style>
 </head>
@@ -102,8 +83,18 @@
     <p>Age Limit: 18 - 40 Years | For Location: <b>Search "Rohi VTTI" on Google Maps</b></p>
 </div>
 
-<div class="section-title">Courses Duration (Batch 3)</div>
+<div class="section-title">IT & Management Courses (3 Months)</div>
 <section class="course-group">
+    <div class="course-card">
+        <span class="free-tag">Govt. FREE</span>
+        <img src="https://unsplash.com" alt="Office Management">
+        <div style="padding: 15px; text-align: center;"><h3>Office Management</h3><p><b>Duration: 3 Months</b></p></div>
+    </div>
+    <div class="course-card">
+        <span class="free-tag">Govt. FREE</span>
+        <img src="https://unsplash.com" alt="Amazon">
+        <div style="padding: 15px; text-align: center;"><h3>Amazon (E-com)</h3><p><b>Duration: 3 Months</b></p></div>
+    </div>
     <div class="course-card">
         <span class="free-tag">Govt. FREE</span>
         <img src="web-dev.jpg">
@@ -114,15 +105,24 @@
         <img src="digital-marketing.jpg">
         <div style="padding: 15px; text-align: center;"><h3>Digital Marketing</h3><p><b>Duration: 3 Months</b></p></div>
     </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="ecom.jpg">
-        <div style="padding: 15px; text-align: center;"><h3>E-commerce</h3><p><b>Duration: 3 Months</b></p></div>
-    </div>
+</section>
+
+<div class="section-title">Technical & Beauty Courses (6 Months)</div>
+<section class="course-group">
     <div class="course-card">
         <span class="free-tag">Govt. FREE</span>
         <img src="beauty.jpg">
         <div style="padding: 15px; text-align: center;"><h3>Beauty Therapy</h3><p><b>Duration: 6 Months</b></p></div>
+    </div>
+    <div class="course-card">
+        <span class="free-tag">Govt. FREE</span>
+        <img src="hair.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>Hair Styling</h3><p><b>Duration: 6 Months</b></p></div>
+    </div>
+    <div class="course-card">
+        <span class="free-tag">Govt. FREE</span>
+        <img src="skin.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>Skin Care</h3><p><b>Duration: 6 Months</b></p></div>
     </div>
 </section>
 
@@ -135,14 +135,6 @@
 <footer style="background: #111; color: #888; text-align: center; padding: 20px;">
     &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
 </footer>
-
-<!-- 100% FIXED WHATSAPP BUTTON (No Error) -->
-<a href="https://whatsapp.com" class="whatsapp-float" target="_blank">
-    <!-- Asli WhatsApp Logo code se banaya gaya -->
-    <svg width="35" height="35" viewBox="0 0 175.216 175.216" xmlns="http://w3.org" fill="#fff">
-        <path d="M44.5 20.326a78.54 78.54 0 0 0-56.06 0C36.27 0 .068 35.58.064 79.26c0 13.99 3.66 27.6 10.57 39.65L0 160l42.04-11.02a79.33 79.33 0 0 0 37.9.965h.004c43.68 0 79.26-35.58 79.3-79.3a78.98 78.98 0 0 0-22.64-56.3zM79.94 145.21a65.73 65.73 0 0 1-33.56-.92l-2.4-.144-24.94 6.54 6.66-24.33-1.56-2.51a65.6 65.6 0 0 1-10.07-35.05c0-36.26 29.57-65.84 65.91-65.84a65.6 65.6 0 0 1 46.6 19.31 65.57 65.57 0 0 1 19.28 46.6c-.004 36.39-29.61 65.92-65.92 65.92zm36.15-49.34c-1.97-.99-11.7-5.78-13.53-6.46-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-    </svg>
-</a>
 
 <script>
     const countdownDate = new Date("August 1, 2026 00:00:00").getTime();
