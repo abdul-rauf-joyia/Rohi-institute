@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohi Vocational Technical Training Institute | Multan</title>
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; --gold: #ffcc00; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; padding-bottom: 80px; }
@@ -13,78 +13,53 @@
         /* Notice Bar */
         .notice-bar { background: #ff3333; color: white; padding: 10px; font-weight: bold; text-align: center; }
 
+        /* Header */
         header { background: var(--primary); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
         .header-text { text-align: center; flex: 1; min-width: 300px; }
         .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
 
+        /* Hero */
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
         .hero-content h2 { font-size: 2.5em; color: var(--gold); }
 
+        /* Timer */
         .timer-section { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
         .timer-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
         .time-box { background: var(--primary); padding: 15px; border-radius: 10px; min-width: 80px; border-bottom: 4px solid var(--gold); }
         .time-box span { font-size: 2em; font-weight: bold; display: block; }
         .time-box small { text-transform: uppercase; font-size: 0.8em; color: var(--gold); }
 
+        /* Gallery */
         .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
-        
         .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
         .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
         .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
         .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
 
+        /* Status Box */
         .status-container { max-width: 700px; margin: 40px auto; background: #fff1f1; padding: 30px; border-radius: 20px; border: 2px dashed #ff3333; text-align: center; }
 
+        /* Courses */
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
         .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
         .course-card img { width: 100%; height: 180px; object-fit: cover; }
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
         .duration-tag { color: var(--primary); font-weight: bold; display: block; margin-top: 10px; font-size: 0.9em; }
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        /* WhatsApp Fixed Button */
+        .whatsapp-btn { 
+            position: fixed; bottom: 30px; right: 25px; 
+            background-color: #25d366; width: 60px; height: 60px; 
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+            z-index: 99999; transition: 0.3s ease; 
+        }
+        .whatsapp-btn:hover { transform: scale(1.1); background-color: #128c7e; }
+        .whatsapp-btn i { color: white; font-size: 35px; }
 
-<style>
-    /* Sabse pehle purani styling ko override karne ke liye !important use kiya hai */
-    .contact-buttons { 
-        position: fixed !important; 
-        bottom: 30px !important; 
-        right: 25px !important; 
-        left: auto !important; /* Left se hata kar right pe lane ke liye */
-        display: flex !important;
-        z-index: 99999 !important; /* Taaki sabse upar dikhe */
-    }
-
-    .whatsapp-btn { 
-        background-color: #25d366 !important; 
-        width: 60px !important; 
-        height: 60px !important; 
-        border-radius: 50% !important; 
-        display: flex !important; 
-        align-items: center !important; 
-        justify-content: center !important; 
-        text-decoration: none !important; 
-        box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important; 
-        transition: 0.3s ease !important;
-    }
-
-    .whatsapp-btn:hover {
-        transform: scale(1.1) !important;
-        background-color: #128c7e !important;
-    }
-
-    /* Icon ka size aur color */
-    .whatsapp-btn i {
-        color: white !important;
-        font-size: 35px !important;
-        margin: 0 !important;
-    }
-</style>
-
-<div class="contact-buttons">
-    <a href="https://wa.me/923020757793" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
+        @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
+    </style>
+</head>
 <body>
 
 <div class="notice-bar">
@@ -107,6 +82,7 @@
     </div>
 </section>
 
+<!-- Timer -->
 <section class="timer-section">
     <h2 style="color: var(--gold);">Next Admission Batch Opening In:</h2>
     <div class="timer-container" id="timer">
@@ -117,6 +93,7 @@
     </div>
 </section>
 
+<!-- Gallery -->
 <div class="section-title">Institute Gallery</div>
 <div class="gallery-grid">
     <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
@@ -124,18 +101,19 @@
     <div class="gallery-item"><img src="comp-lab.jpg"><p>IT & Computer Lab</p></div>
 </div>
 
+<!-- Status -->
 <div class="section-title">Admission Status</div>
 <div class="status-container">
     <h2 style="color: #ff3333;">Registration CLOSED (Batch 3 in Progress)</h2>
     <p>Age Limit: 18 - 40 Years | Search "Rohi VTTI" on Google Maps</p>
 </div>
 
-<!-- IT & MANAGEMENT (3 Months) -->
+<!-- IT Courses -->
 <div class="section-title">IT & Management Courses (3 Months)</div>
 <section class="course-group">
     <div class="course-card">
         <span class="free-tag">Govt. FREE</span>
-        <img src="office-management.jpg" alt="Office Management">
+        <img src="office-management.jpg" alt="Office">
         <div style="padding: 15px; text-align: center;"><h3>Office Management</h3><span class="duration-tag">Duration: 3 Months</span></div>
     </div>
     <div class="course-card">
@@ -155,7 +133,7 @@
     </div>
 </section>
 
-<!-- BEAUTY & STYLING (6 Months) -->
+<!-- Beauty Courses -->
 <div class="section-title">Beauty & Styling Courses (6 Months)</div>
 <section class="course-group" style="background: #fff;">
     <div class="course-card">
@@ -175,6 +153,7 @@
     </div>
 </section>
 
+<!-- Contact Footer -->
 <section style="background: var(--dark); color: white; padding: 40px; text-align: center;">
     <h2 style="color: var(--gold);">Contact Rohi VTTI</h2>
     <p>Director: Samad Joyia | Phone: 0302-0757793</p>
@@ -185,15 +164,12 @@
     &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
 </footer>
 
-<div class="contact-buttons">
-    <a href="https://wa.me/923020757793" class="whatsapp-float" target="_blank">
-    <svg viewBox="0 0 32 32" style="width:35px; height:35px; fill:white;">
-        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.475 2.025 7.775l-2.025 7.425 7.625-2c2.225 1.15 4.75 1.8 7.4 1.8 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.45 0-4.75-0.65-6.75-1.775l-0.475-0.275-4.525 1.175 1.2-4.4-0.3-0.475c-1.25-2-1.95-4.35-1.95-6.85 0-7.175 5.825-13 13-13s13 5.825 13 13-5.825 13-13 13zM22.5 19.35c-0.35-0.175-2.1-1.025-2.425-1.15s-0.55-0.175-0.775 0.175-0.9 1.15-1.1 1.375-0.4 0.25-0.75 0.075c-0.35-0.175-1.475-0.55-2.825-1.75-1.05-0.925-1.75-2.075-1.95-2.425s-0.025-0.55 0.15-0.725c0.15-0.15 0.35-0.4 0.525-0.6s0.225-0.35 0.35-0.575 0.05-0.425-0.025-0.6-0.55-1.325-0.75-1.825c-0.2-0.475-0.4-0.425-0.55-0.425h-0.475c-0.175 0-0.45 0.075-0.7 0.35s-0.925 0.9-0.925 2.2 0.95 2.55 1.075 2.725c0.125 0.175 1.875 2.875 4.55 4.025 0.625 0.275 1.125 0.45 1.5 0.575 0.65 0.2 1.225 0.175 1.7 0.1s0.925-0.375 1.05-0.75 0.125-0.725 0.05-0.85-0.275-0.225-0.625-0.4z"></path>
-    </svg>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923020757793" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
 </a>
 
-</div>
-
+<!-- Timer Script -->
 <script>
     const countdownDate = new Date("August 1, 2026 00:00:00").getTime();
     const x = setInterval(function() {
@@ -208,4 +184,3 @@
 
 </body>
 </html>
-
