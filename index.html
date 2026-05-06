@@ -3,245 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohi Vocational Technical Training Institute</title>
+    <title>Rohi Vocational Technical Training Institute | Multan</title>
+    <!-- Sab se naya aur stable Font Awesome link -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
-        :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+        :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; --gold: #ffcc00; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; }
         
-        /* Header & Hero */
-        header { background: var(--primary); color: white; padding: 40px 20px; text-align: center; }
-        .hero { background: #eef2f7; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
-        .hero h2 { font-size: 2.5em; color: var(--primary); margin-bottom: 10px; }
+        /* Notice Bar */
+        .notice-bar { background: #ff3333; color: white; padding: 10px; font-weight: bold; text-align: center; }
 
-        /* Course Sections */
-        .section-title { text-align: center; margin: 50px 0 30px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; }
+        header { background: var(--primary); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+        .header-text { text-align: center; flex: 1; min-width: 300px; }
+        .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
+
+        /* Hero */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
+        .hero-content h2 { font-size: 2.5em; color: var(--gold); }
+
+        /* Timer */
+        .timer-section { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
+        .timer-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .time-box { background: var(--primary); padding: 15px; border-radius: 10px; min-width: 80px; border-bottom: 4px solid var(--gold); }
+        .time-box span { font-size: 2em; font-weight: bold; display: block; }
+        .time-box small { text-transform: uppercase; font-size: 0.8em; color: var(--gold); }
+
+        .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+        
+        /* Gallery */
+        .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
+        .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
+        .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
+        .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
+
+        /* Courses */
         .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
-        
-        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; }
-        .course-card:hover { transform: translateY(-10px); }
-        .course-card img { width: 100%; height: 200px; object-fit: cover; }
-        .course-card-content { padding: 20px; text-align: center; }
-        .course-card h3 { color: var(--primary); margin-top: 0; }
+        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
+        .course-card img { width: 100%; height: 180px; object-fit: cover; }
+        .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
 
-        /* Contact & Location */
-        .info-box { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
-        .info-box p { font-size: 1.2em; margin: 10px 0; }
-        .highlight { color: #ffcc00; font-weight: bold; }
+        /* WhatsApp Button Fix */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; text-align: center; font-size: 38px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 9999; display: flex !important; align-items: center; justify-content: center; text-decoration: none; }
+        .whatsapp-float i { color: white !important; font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important; font-weight: 400; font-style: normal; }
 
-        /* WhatsApp Button */
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-        
-        footer { background: #111; color: #888; text-align: center; padding: 20px; font-size: 0.9em; }
+        @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
     </style>
 </head>
 <body>
 
+<div class="notice-bar">
+    <marquee>⚠️ Batch 3 classes are currently in progress. Admissions are CLOSED. Stay tuned for Batch 4!</marquee>
+</div>
+
 <header>
-    <h1>ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
-    <p style="font-size: 1.2em;">Affiliated with <strong>NAVTTC</strong></p>
+    <img src="rohi-logo.png" onerror="this.src='https://placehold.co'" alt="Rohi Logo" class="logo-img">
+    <div class="header-text">
+        <h1 style="margin: 0; font-size: 1.4em;">ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
+        <p style="margin: 5px 0 0;">Affiliated with <strong>NAVTTC & PM-SYD</strong></p>
+    </div>
+    <img src="navttc-logo.png" onerror="this.src='https://navttc.gov.pk'" alt="NAVTTC Logo" class="logo-img">
 </header>
 
 <section class="hero">
-    <h2>Our Aim: Student Success</h2>
-    <p>Empowering the youth of Multan with professional skills and technical excellence.</p>
-    
-    <!-- AAPKI BHEJI HUI IMAGE YAHAN HAI -->
-    <img src="main-building.jpg" alt="Rohi Institute Multan" 
-         style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; 
-                border: 8px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+    <div class="hero-content">
+        <h2>Our Aim: Skill Empowerment</h2>
+        <p>Globally recognized certificates under PM-SYD (Govt. of Pakistan).</p>
+    </div>
 </section>
 
-<!-- Section 1: Beauty & Personal Care -->
-<div class="section-title">Beauty & Styling Dept.</div>
+<section class="timer-section">
+    <h2 style="color: var(--gold);">Next Admission Batch Opening In:</h2>
+    <div class="timer-container" id="timer">
+        <div class="time-box"><span id="days">00</span><small>Days</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
+    </div>
+</section>
+
+<div class="section-title">Institute Gallery</div>
+<div class="gallery-grid">
+    <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
+    <div class="gallery-item"><img src="beauty-lab.jpg"><p>Professional Beauty Lab</p></div>
+    <div class="gallery-item"><img src="comp-lab.jpg"><p>IT & Computer Lab</p></div>
+</div>
+
+<div class="section-title">Courses Duration (Batch 3)</div>
 <section class="course-group">
     <div class="course-card">
-        <img src="beauty.jpg" alt="Beauty Therapy">
-        <div class="course-card-content">
-            <h3>Beauty Therapy</h3>
-            <p>Professional skin care and makeup techniques.</p>
-        </div>
+        <span class="free-tag">Govt. FREE</span>
+        <img src="web-dev.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>Web Development</h3><p><b>Duration: 3 Months</b></p></div>
     </div>
     <div class="course-card">
-        <img src="hair.jpg" alt="Hair Styling">
-        <div class="course-card-content">
-            <h3>Hair Styling</h3>
-            <p>Advanced hair cutting, coloring, and styling.</p>
-        </div>
+        <span class="free-tag">Govt. FREE</span>
+        <img src="digital-marketing.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>Digital Marketing</h3><p><b>Duration: 3 Months</b></p></div>
     </div>
     <div class="course-card">
-        <img src="skin.jpg" alt="Skin Care">
-        <div class="course-card-content">
-            <h3>Skin Care</h3>
-            <p>Dermatology basics and aesthetic treatments.</p>
-        </div>
+        <span class="free-tag">Govt. FREE</span>
+        <img src="ecom.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>E-commerce</h3><p><b>Duration: 3 Months</b></p></div>
+    </div>
+    <div class="course-card">
+        <span class="free-tag">Govt. FREE</span>
+        <img src="beauty.jpg">
+        <div style="padding: 15px; text-align: center;"><h3>Beauty Therapy</h3><p><b>Duration: 6 Months</b></p></div>
     </div>
 </section>
 
-<!-- Section 2: IT & Digital Skills -->
-<div class="section-title">IT & Digital Media Dept.</div>
-<section class="course-group" style="background: #e9ecef;">
-    <div class="course-card">
-        <img src="digital-marketing.jpg" alt="Digital Marketing">
-        <div class="course-card-content">
-            <h3>Digital Marketing</h3>
-            <p>Social media and SEO strategies for business.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="ecom.jpg" alt="E-commerce">
-        <div class="course-card-content">
-            <h3>E-commerce</h3>
-            <p>Learn to build and manage online stores.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="web-dev.jpg" alt="Web Development">
-        <div class="course-card-content">
-            <h3>Web Development</h3>
-            <p>Full stack web designing and coding.</p>
-        </div>
-    </div>
+<section style="background: var(--dark); color: white; padding: 40px; text-align: center;">
+    <h2 style="color: var(--gold);">Contact Rohi VTTI</h2>
+    <p>Director: Samad Joyia | 0302-0757793</p>
+    <p>Samad House, St 1, Vehari Road, Multan. (Search on Google Maps)</p>
 </section>
 
-<section class="info-box">
-    <h2>Contact & Admission</h2>
-    <p>Director: <span class="highlight">Samad Joyia</span></p>
-    <p>Phone: <span class="highlight">0302-0757793</span></p>
-    <p>Address: <span class="highlight">Samad House, Street No 1, Vehari Road, Multan</span></p>
-</section>
+<footer style="background: #111; color: #888; text-align: center; padding: 20px;">
+    &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
+</footer>
 
-<!-- WhatsApp Floating Button -->
-<a href= <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohi Vocational Technical Training Institute</title>
-    <style>
-        :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
-        
-        /* Header & Hero */
-        header { background: var(--primary); color: white; padding: 40px 20px; text-align: center; }
-        .hero { background: #eef2f7; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
-        .hero h2 { font-size: 2.5em; color: var(--primary); margin-bottom: 10px; }
-
-        /* Course Sections */
-        .section-title { text-align: center; margin: 50px 0 30px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; }
-        .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
-        
-        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; }
-        .course-card:hover { transform: translateY(-10px); }
-        .course-card img { width: 100%; height: 200px; object-fit: cover; }
-        .course-card-content { padding: 20px; text-align: center; }
-        .course-card h3 { color: var(--primary); margin-top: 0; }
-
-        /* Contact & Location */
-        .info-box { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
-        .info-box p { font-size: 1.2em; margin: 10px 0; }
-        .highlight { color: #ffcc00; font-weight: bold; }
-
-        /* WhatsApp Button */
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-        
-        footer { background: #111; color: #888; text-align: center; padding: 20px; font-size: 0.9em; }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
-    <p style="font-size: 1.2em;">Affiliated with <strong>NAVTTC</strong></p>
-</header>
-
-<section class="hero">
-    <h2>Our Aim: Student Success</h2>
-    <p>Empowering the youth of Multan with professional skills and technical excellence.</p>
-    
-    <!-- AAPKI BHEJI HUI IMAGE YAHAN HAI -->
-    <img src="main-building.jpg" alt="Rohi Institute Multan" 
-         style="width: 90%; max-width: 500px; border-radius: 15px; margin-top: 20px; 
-                border: 8px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-</section>
-
-<!-- Section 1: Beauty & Personal Care -->
-<div class="section-title">Beauty & Styling Dept.</div>
-<section class="course-group">
-    <div class="course-card">
-        <img src="beauty.jpg" alt="Beauty Therapy">
-        <div class="course-card-content">
-            <h3>Beauty Therapy</h3>
-            <p>Professional skin care and makeup techniques.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="hair.jpg" alt="Hair Styling">
-        <div class="course-card-content">
-            <h3>Hair Styling</h3>
-            <p>Advanced hair cutting, coloring, and styling.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="skin.jpg" alt="Skin Care">
-        <div class="course-card-content">
-            <h3>Skin Care</h3>
-            <p>Dermatology basics and aesthetic treatments.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Section 2: IT & Digital Skills -->
-<div class="section-title">IT & Digital Media Dept.</div>
-<section class="course-group" style="background: #e9ecef;">
-    <div class="course-card">
-        <img src="digital-marketing.jpg" alt="Digital Marketing">
-        <div class="course-card-content">
-            <h3>Digital Marketing</h3>
-            <p>Social media and SEO strategies for business.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="ecom.jpg" alt="E-commerce">
-        <div class="course-card-content">
-            <h3>E-commerce</h3>
-            <p>Learn to build and manage online stores.</p>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="web-dev.jpg" alt="Web Development">
-        <div class="course-card-content">
-            <h3>Web Development</h3>
-            <p>Full stack web designing and coding.</p>
-        </div>
-    </div>
-</section>
-
-<section class="info-box">
-    <h2>Contact & Admission</h2>
-    <p>Director: <span class="highlight">Samad Joyia</span></p>
-    <p>Phone: <span class="highlight">0302-0757793</span></p>
-    <p>Address: <span class="highlight">Samad House, Street No 1, Vehari Road, Multan</span></p>
-</section>
-
-<!-- WhatsApp Floating Button -->
+<!-- Updated WhatsApp Button -->
 <a href="https://wa.me/923020757793" class="whatsapp-float" target="_blank">
     <svg viewBox="0 0 32 32" style="width:35px; height:35px; fill:white;">
         <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.475 2.025 7.775l-2.025 7.425 7.625-2c2.225 1.15 4.75 1.8 7.4 1.8 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.45 0-4.75-0.65-6.75-1.775l-0.475-0.275-4.525 1.175 1.2-4.4-0.3-0.475c-1.25-2-1.95-4.35-1.95-6.85 0-7.175 5.825-13 13-13s13 5.825 13 13-5.825 13-13 13zM22.5 19.35c-0.35-0.175-2.1-1.025-2.425-1.15s-0.55-0.175-0.775 0.175-0.9 1.15-1.1 1.375-0.4 0.25-0.75 0.075c-0.35-0.175-1.475-0.55-2.825-1.75-1.05-0.925-1.75-2.075-1.95-2.425s-0.025-0.55 0.15-0.725c0.15-0.15 0.35-0.4 0.525-0.6s0.225-0.35 0.35-0.575 0.05-0.425-0.025-0.6-0.55-1.325-0.75-1.825c-0.2-0.475-0.4-0.425-0.55-0.425h-0.475c-0.175 0-0.45 0.075-0.7 0.35s-0.925 0.9-0.925 2.2 0.95 2.55 1.075 2.725c0.125 0.175 1.875 2.875 4.55 4.025 0.625 0.275 1.125 0.45 1.5 0.575 0.65 0.2 1.225 0.175 1.7 0.1s0.925-0.375 1.05-0.75 0.125-0.725 0.05-0.85-0.275-0.225-0.625-0.4z"></path>
     </svg>
 </a>
 
-<footer>
-    &copy; 2024 Rohi VTTI Multan. Designed for Student Success.
-</footer>
 
-</body>
-</html> class="whatsapp-float" target="_blank">
-    <span style="font-family: sans-serif;">W</span>
-</a>
-
-<footer>
-    &copy; 2024 Rohi VTTI Multan. Designed for Student Success.
-</footer>
+<script>
+    const countdownDate = new Date("August 1, 2026 00:00:00").getTime();
+    const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        document.getElementById("days").innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
+        document.getElementById("hours").innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        document.getElementById("minutes").innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("seconds").innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
+    }, 1000);
+</script>
 
 </body>
 </html>
