@@ -41,10 +41,49 @@
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
         .duration-tag { color: var(--primary); font-weight: bold; display: block; margin-top: 10px; font-size: 0.9em; }
 
-        .contact-buttons { position: fixed; bottom: 20px; left: 0; right: 0; display: flex; justify-content: center; gap: 15px; z-index: 10001; padding: 0 10px; }
-        .btn-float { flex: 1; max-width: 180px; padding: 12px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: 0.3s; }
-        .whatsapp-btn { background-color: #25d366; }
-        .call-btn { background-color: var(--primary); }
+        .contact-buttons { 
+    position: fixed; 
+    bottom: 20px; 
+    left: 0; 
+    right: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    z-index: 10001; 
+    padding: 0 15px; 
+    box-sizing: border-box; /* Taake padding ki wajah se screen se bahar na jaye */
+}
+
+.btn-float { 
+    flex: 1; 
+    max-width: 180px; 
+    padding: 12px 20px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    transition: all 0.3s ease; 
+    font-size: 14px; /* Text size ko settle karne ke liye */
+}
+
+.btn-float:hover {
+    transform: translateY(-2px); /* Hover par thoda upar uthega jo acha lagta hai */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.whatsapp-btn { 
+    background-color: #25d366; 
+}
+
+.call-btn { 
+    /* Agar --primary kaam nahi kar raha, to yahan direct color code (jaise #007bff) likh dein */
+    background-color: var(--primary, #007bff); 
+}
 
         @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
     </style>
