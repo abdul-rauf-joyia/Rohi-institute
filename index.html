@@ -41,43 +41,50 @@
         .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
         .duration-tag { color: var(--primary); font-weight: bold; display: block; margin-top: 10px; font-size: 0.9em; }
 
-       <head>
-    <style>
-        /* Floating Container */
-        .contact-buttons { 
-            position: fixed; 
-            bottom: 30px; 
-            right: 20px; 
-            z-index: 10001; 
-            display: flex;
-            flex-direction: column; 
-            gap: 15px;
-        }
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        .whatsapp-btn { 
-            background-color: #25d366; 
-            width: 60px; 
-            height: 60px; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            text-decoration: none; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
-            transition: 0.3s;
-        }
+<style>
+    /* Sabse pehle purani styling ko override karne ke liye !important use kiya hai */
+    .contact-buttons { 
+        position: fixed !important; 
+        bottom: 30px !important; 
+        right: 25px !important; 
+        left: auto !important; /* Left se hata kar right pe lane ke liye */
+        display: flex !important;
+        z-index: 99999 !important; /* Taaki sabse upar dikhe */
+    }
 
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-            background-color: #128c7e;
-        }
+    .whatsapp-btn { 
+        background-color: #25d366 !important; 
+        width: 60px !important; 
+        height: 60px !important; 
+        border-radius: 50% !important; 
+        display: flex !important; 
+        align-items: center !important; 
+        justify-content: center !important; 
+        text-decoration: none !important; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important; 
+        transition: 0.3s ease !important;
+    }
 
-        .whatsapp-btn i {
-            color: white;
-            font-size: 35px;
-        }
-    </style>
-</head>
+    .whatsapp-btn:hover {
+        transform: scale(1.1) !important;
+        background-color: #128c7e !important;
+    }
+
+    /* Icon ka size aur color */
+    .whatsapp-btn i {
+        color: white !important;
+        font-size: 35px !important;
+        margin: 0 !important;
+    }
+</style>
+
+<div class="contact-buttons">
+    <a href="https://wa.me/923020757793" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
 <body>
 
 <div class="notice-bar">
