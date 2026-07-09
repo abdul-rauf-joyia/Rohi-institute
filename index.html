@@ -22,12 +22,7 @@
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
         .hero-content h2 { font-size: 2.5em; color: var(--gold); }
 
-        /* Timer */
-        .timer-section { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
-        .timer-container { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
-        .time-box { background: var(--primary); padding: 15px; border-radius: 10px; min-width: 80px; border-bottom: 4px solid var(--gold); }
-        .time-box span { font-size: 2em; font-weight: bold; display: block; }
-        .time-box small { text-transform: uppercase; font-size: 0.8em; color: var(--gold); }
+ 
 
         /* Gallery */
         .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
@@ -91,14 +86,36 @@
         <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
         <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
     </div>
-</section>
-
 <!-- Gallery -->
 <div class="section-title">Institute Gallery</div>
+
 <div class="gallery-grid">
-    <div class="gallery-item"><img src="gallery1.jpg"><p>Director Samad Joyia</p></div>
-    <div class="gallery-item"><img src="beauty-lab.jpg"><p>Professional Beauty Lab</p></div>
-    <div class="gallery-item"><img src="comp-lab.jpg"><p>IT & Computer Lab</p></div>
+
+    <div class="gallery-item">
+        <img src="gallery1.jpg" alt="Director">
+        <p>Director Samad Joyia</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="beauty-lab.jpg" alt="Beauty Lab">
+        <p>Professional Beauty Lab</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="comp-lab.jpg" alt="Computer Lab">
+        <p>IT & Computer Lab</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="biometric.jpg" alt="Biometric Attendance">
+        <p>Biometric Attendance System</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="fire-extinguisher.jpg" alt="Fire Safety">
+        <p>Fire Extinguisher Safety</p>
+    </div>
+
 </div>
 
 <!-- Status -->
@@ -169,18 +186,13 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Timer Script -->
-<script>
-    const countdownDate = new Date("August 1, 2026 00:00:00").getTime();
-    const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        document.getElementById("days").innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
-        document.getElementById("hours").innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        document.getElementById("minutes").innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        document.getElementById("seconds").innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
-    }, 1000);
-</script>
+ 
+<footer style="background:#111;color:#888;text-align:center;padding:20px;">
 
-</body>
-</html>
+    <p>&copy; 2026 Rohi VTTI | PM-SYD Technical Partner</p>
+
+    <p style="color:#ffcc00;font-size:15px;margin-top:10px;">
+        This website is designed by <strong>ABDUL-RAUF JOYIA</strong>
+    </p>
+
+</footer>
