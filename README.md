@@ -1,2 +1,1 @@
-# Rohi-institute
-we want to make our students sucesfull so that they can learn skills and earn money
+At Rohi Vocational & Technical Training Institute, our core mission is to see our students succeed. We don't just teach courses; we deliver market-driven skills that transform lives. Our goal is to empower the youth, unlock their hidden potential, and pave the way for a highly secure and successful career.Invest in your growth, master in-demand skills, and build a stable tomorrow with us. Your dedication combined with our training guarantees a brilliant professional journey! 💼🚀“Your Success is Our Ultimate Pride.”
