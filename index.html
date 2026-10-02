@@ -4,30 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ROHI VTTI | NAVTTC Training Partner Institute</title>
 
-<meta name="description"
-content="Rohi Vocational & Technical Training Institute Multan - Free Skill Development Courses affiliated with NAVTTC.">
-
 <style>
-/* =========================
-   ROOT
-========================= */
-:root{
-    --blue:#004a99;
-    --blue-dark:#00356f;
-    --green:#28a745;
-    --green-dark:#168235;
-    --gold:#ffcc00;
-    --white:#ffffff;
-    --black:#111111;
-    --gray:#f5f7fa;
-    --text:#333;
-    --shadow:0 12px 35px rgba(0,0,0,.10);
-    --radius:18px;
-}
-
 *{
     margin:0;
     padding:0;
@@ -37,264 +16,188 @@ content="Rohi Vocational & Technical Training Institute Multan - Free Skill Deve
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    color:var(--text);
-    background:#fff;
+    background:#f5f8fa;
+    color:#222;
     line-height:1.6;
 }
 
-img{
-    max-width:100%;
-    display:block;
-}
+/* ================= HEADER ================= */
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:min(1180px,92%);
-    margin:auto;
-}
-
-/* =========================
-   TOP BAR
-========================= */
-.topbar{
-    background:var(--blue-dark);
+header{
+    background:linear-gradient(135deg,#004a99,#0066b3);
     color:white;
-    padding:9px 0;
-    font-size:14px;
-}
-
-.topbar .container{
-    display:flex;
-    justify-content:space-between;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.navbar{
     position:sticky;
     top:0;
-    z-index:999;
-    background:#fff;
-    box-shadow:0 3px 18px rgba(0,0,0,.08);
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
-.nav-inner{
-    min-height:82px;
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    padding:12px 25px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:25px;
+    gap:20px;
 }
 
-.brand{
+.logo-area{
     display:flex;
     align-items:center;
     gap:12px;
 }
 
-.brand img{
+.logo-area img{
     width:58px;
     height:58px;
     object-fit:contain;
+    background:white;
+    border-radius:8px;
+    padding:4px;
 }
 
-.brand-text h2{
-    color:var(--blue);
-    font-size:22px;
-    line-height:1.1;
+.logo-text h2{
+    font-size:20px;
+    line-height:1.2;
 }
 
-.brand-text span{
-    color:var(--green);
+.logo-text span{
     font-size:12px;
-    font-weight:bold;
+    color:#ffcc00;
 }
 
 .nav-links{
     display:flex;
-    align-items:center;
-    gap:22px;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
 }
 
 .nav-links a{
-    font-weight:600;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
     font-size:14px;
-    transition:.3s;
 }
 
 .nav-links a:hover{
-    color:var(--green);
+    color:#ffcc00;
 }
 
-.nav-btn{
-    background:var(--green);
-    color:white!important;
-    padding:11px 18px;
-    border-radius:30px;
-}
+/* ================= HERO ================= */
 
-.menu-btn{
-    display:none;
-    font-size:27px;
-    cursor:pointer;
-}
-
-/* =========================
-   HERO
-========================= */
 .hero{
-    min-height:650px;
+    min-height:620px;
+    background:
+    linear-gradient(rgba(0,55,100,.70),rgba(0,55,100,.70)),
+    url("main-building.jpg") center/cover;
     display:flex;
     align-items:center;
-    position:relative;
-    background:
-    linear-gradient(90deg,rgba(0,36,72,.92),rgba(0,74,153,.72)),
-    url("main-building.jpg") center/cover;
-    color:white;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
 }
 
 .hero-content{
-    max-width:760px;
-}
-
-.hero-badge{
-    display:inline-block;
-    background:var(--gold);
-    color:#111;
-    font-weight:bold;
-    padding:8px 18px;
-    border-radius:30px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:clamp(38px,6vw,68px);
-    line-height:1.05;
-    margin-bottom:18px;
-}
-
-.hero h1 span{
-    color:var(--gold);
-}
-
-.hero p{
-    font-size:18px;
-    max-width:700px;
-    margin-bottom:30px;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 24px;
-    border-radius:35px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn-green{
-    background:var(--green);
+    max-width:900px;
     color:white;
 }
 
-.btn-green:hover{
-    background:var(--green-dark);
-    transform:translateY(-2px);
+.hero-content h1{
+    font-size:48px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
-.btn-white{
-    background:white;
-    color:var(--blue);
+.hero-content h2{
+    color:#ffcc00;
+    font-size:25px;
+    margin-bottom:20px;
 }
 
-.btn-white:hover{
-    transform:translateY(-2px);
+.hero-content p{
+    font-size:19px;
+    margin-bottom:30px;
 }
 
-/* =========================
-   STATS
-========================= */
-.stats{
-    margin-top:-55px;
-    position:relative;
-    z-index:5;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.stat{
-    background:white;
-    padding:25px 15px;
-    text-align:center;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-}
-
-.stat h3{
-    color:var(--blue);
-    font-size:30px;
-}
-
-.stat p{
-    font-size:13px;
+.btn{
+    display:inline-block;
+    background:#28a745;
+    color:white;
+    padding:13px 25px;
+    border-radius:7px;
+    text-decoration:none;
     font-weight:bold;
+    margin:5px;
+    transition:.3s;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+.btn:hover{
+    transform:translateY(-3px);
+    background:#218838;
+}
+
+.btn.gold{
+    background:#ffcc00;
+    color:#222;
+}
+
+/* ================= GENERAL ================= */
+
 section{
-    padding:90px 0;
+    padding:70px 7%;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title span{
-    color:var(--green);
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:13px;
+    margin-bottom:45px;
 }
 
 .section-title h2{
-    color:var(--blue);
-    font-size:38px;
-    margin:7px 0;
+    color:#004a99;
+    font-size:34px;
+    margin-bottom:10px;
 }
 
 .section-title p{
-    max-width:700px;
-    margin:auto;
     color:#666;
 }
 
-/* =========================
-   ABOUT
-========================= */
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    background:white;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:35px 7%;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h3{
+    color:#004a99;
+    font-size:32px;
+}
+
+.stat p{
+    font-weight:bold;
+    color:#555;
+}
+
+/* ================= ABOUT ================= */
+
 .about{
-    background:var(--gray);
+    background:white;
 }
 
 .about-grid{
@@ -304,51 +207,25 @@ section{
     align-items:center;
 }
 
-.about-image{
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-}
-
-.about-image img{
+.about-img img{
     width:100%;
-    height:430px;
+    height:380px;
     object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-.about-content h2{
-    color:var(--blue);
-    font-size:36px;
+.about-text h3{
+    color:#004a99;
+    font-size:28px;
     margin-bottom:15px;
 }
 
-.about-content p{
+.about-text p{
     margin-bottom:15px;
 }
 
-.check-list{
-    list-style:none;
-    margin-top:20px;
-}
-
-.check-list li{
-    margin:10px 0;
-    font-weight:600;
-}
-
-.check-list li::before{
-    content:"✓";
-    color:var(--green);
-    font-weight:bold;
-    margin-right:10px;
-}
-
-/* =========================
-   COURSE GRID
-========================= */
-.courses{
-    background:white;
-}
+/* ================= COURSE CARDS ================= */
 
 .course-grid{
     display:grid;
@@ -357,41 +234,21 @@ section{
 }
 
 .course-card{
-    background:#fff;
-    border-radius:var(--radius);
+    background:white;
+    border-radius:15px;
     overflow:hidden;
-    border:1px solid #e8edf2;
-    box-shadow:0 8px 28px rgba(0,0,0,.07);
-    transition:.35s;
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+    transition:.3s;
 }
 
 .course-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.13);
+    transform:translateY(-6px);
 }
 
-.course-img{
-    height:210px;
-    position:relative;
-    overflow:hidden;
-}
-
-.course-img img{
+.course-card img{
     width:100%;
-    height:100%;
+    height:210px;
     object-fit:cover;
-}
-
-.free-badge{
-    position:absolute;
-    top:14px;
-    left:14px;
-    background:var(--green);
-    color:#fff;
-    padding:7px 13px;
-    border-radius:20px;
-    font-size:12px;
-    font-weight:bold;
 }
 
 .course-content{
@@ -399,84 +256,71 @@ section{
 }
 
 .course-content h3{
-    color:var(--blue);
-    font-size:22px;
+    color:#004a99;
     margin-bottom:8px;
 }
 
-.course-content p{
+.badge{
+    display:inline-block;
+    background:#28a745;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.course-info{
     color:#666;
     font-size:14px;
-    margin-bottom:14px;
 }
 
-.course-meta{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    margin-bottom:17px;
-}
-
-.meta{
-    background:#eef7ff;
-    color:var(--blue);
-    padding:6px 10px;
-    border-radius:8px;
-    font-size:11px;
-    font-weight:bold;
-}
-
-.details-btn{
-    width:100%;
-    border:0;
-    background:var(--blue);
-    color:#fff;
-    padding:12px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.details-btn:hover{
-    background:var(--green);
-}
-
-/* =========================
-   COURSE DETAILS
-========================= */
 .course-details{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .5s ease;
-    background:#f8fafc;
+    display:none;
+    margin-top:15px;
+    border-top:1px solid #ddd;
+    padding-top:15px;
 }
 
-.course-details-inner{
-    padding:20px 22px;
-    border-top:1px solid #e5e9ee;
-}
-
-.course-details h4{
-    color:var(--blue);
-    margin:10px 0 6px;
+.course-card.active .course-details{
+    display:block;
 }
 
 .course-details ul{
     padding-left:20px;
-    margin-bottom:12px;
+    margin-bottom:15px;
 }
 
-.course-details li{
-    margin:4px 0;
-    font-size:14px;
+.details-btn{
+    background:#004a99;
+    color:white;
+    border:0;
+    padding:10px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:12px;
 }
 
-/* =========================
-   LANGUAGE SECTION
-========================= */
-.languages{
-    background:linear-gradient(135deg,#f0fff5,#f4f9ff);
+.details-btn:hover{
+    background:#003570;
+}
+
+/* ================= BEAUTY ================= */
+
+.beauty-section{
+    background:#fff8fb;
+}
+
+.beauty-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+/* ================= LANGUAGE ================= */
+
+.language-section{
+    background:#eef7ff;
 }
 
 .language-grid{
@@ -487,84 +331,115 @@ section{
 
 .language-card{
     background:white;
-    padding:35px 25px;
-    border-radius:20px;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
-    box-shadow:var(--shadow);
-    border-top:5px solid var(--green);
-    transition:.3s;
-}
-
-.language-card:hover{
-    transform:translateY(-7px);
-}
-
-.language-icon{
-    width:65px;
-    height:65px;
-    margin:0 auto 15px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#e9f8ee;
-    font-size:28px;
+    box-shadow:0 5px 18px rgba(0,0,0,.09);
+    border-top:5px solid #004a99;
 }
 
 .language-card h3{
-    color:var(--blue);
-    margin-bottom:8px;
+    color:#004a99;
+    font-size:24px;
+    margin-bottom:10px;
 }
 
 .language-card p{
     color:#666;
-    font-size:14px;
 }
 
-.eligibility{
-    display:inline-block;
-    margin-top:14px;
-    padding:6px 12px;
-    background:#fff4c7;
-    color:#765d00;
-    border-radius:20px;
-    font-size:12px;
+/* ================= GALLERY ================= */
+
+.gallery{
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery-item{
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+}
+
+.gallery-item img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+}
+
+.gallery-caption{
+    padding:15px;
+    text-align:center;
     font-weight:bold;
+    color:#004a99;
 }
 
-/* =========================
-   ADMISSION OPEN
-========================= */
-.admission{
-    background:
-    linear-gradient(135deg,rgba(0,74,153,.96),rgba(0,53,111,.97));
+/* ================= FACILITIES ================= */
+
+.facilities{
+    background:#f4f8fb;
+}
+
+.facility-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.facility{
+    background:white;
+    padding:30px 22px;
+    text-align:center;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.facility:hover{
+    transform:translateY(-5px);
+}
+
+.facility-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#004a99;
     color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
 }
 
-.admission-box{
-    max-width:900px;
-    margin:auto;
+.facility h3{
+    color:#004a99;
+    margin-bottom:8px;
+}
+
+/* ================= ADMISSION ================= */
+
+.admission{
+    background:linear-gradient(135deg,#004a99,#0066b3);
+    color:white;
     text-align:center;
 }
 
-.open-badge{
-    display:inline-block;
-    background:#24d46b;
-    padding:9px 20px;
-    border-radius:30px;
-    font-weight:bold;
-    margin-bottom:18px;
-}
-
 .admission h2{
-    font-size:42px;
-    margin-bottom:10px;
+    font-size:38px;
+    margin-bottom:12px;
 }
 
 .admission p{
-    font-size:17px;
-    opacity:.9;
-    margin-bottom:25px;
+    font-size:18px;
+    margin-bottom:20px;
 }
 
 .whatsapp-btn{
@@ -572,53 +447,20 @@ section{
     align-items:center;
     gap:10px;
     background:#25D366;
-    color:#fff;
-    padding:15px 27px;
-    border-radius:35px;
+    color:white;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
     font-weight:bold;
-    box-shadow:0 8px 25px rgba(0,0,0,.2);
-    transition:.3s;
+    font-size:17px;
 }
 
 .whatsapp-btn:hover{
-    transform:translateY(-3px);
     background:#1ebe5d;
 }
 
-/* =========================
-   GALLERY
-========================= */
-.gallery{
-    background:var(--gray);
-}
+/* ================= CONTACT ================= */
 
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.gallery-item{
-    height:220px;
-    overflow:hidden;
-    border-radius:15px;
-    box-shadow:0 7px 20px rgba(0,0,0,.08);
-}
-
-.gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.4s;
-}
-
-.gallery-item:hover img{
-    transform:scale(1.08);
-}
-
-/* =========================
-   CONTACT
-========================= */
 .contact{
     background:white;
 }
@@ -629,203 +471,117 @@ section{
     gap:30px;
 }
 
-.contact-card{
-    background:var(--gray);
+.contact-box{
     padding:30px;
-    border-radius:20px;
+    border-radius:15px;
+    background:#f6f9fb;
 }
 
-.contact-card h3{
-    color:var(--blue);
-    margin-bottom:18px;
-}
-
-.contact-row{
-    display:flex;
-    gap:15px;
-    padding:13px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.contact-row:last-child{
-    border-bottom:0;
-}
-
-.contact-icon{
-    width:42px;
-    height:42px;
-    background:var(--green);
-    color:white;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer{
-    background:#101820;
-    color:#ccc;
-    padding:55px 0 20px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:40px;
-}
-
-.footer-brand h2{
-    color:white;
-    margin-bottom:12px;
-}
-
-.footer-brand p{
-    font-size:14px;
-}
-
-footer h3{
-    color:white;
+.contact-box h3{
+    color:#004a99;
     margin-bottom:15px;
 }
 
-.footer-links{
-    list-style:none;
+.contact-box p{
+    margin:10px 0;
 }
 
-.footer-links li{
-    margin:8px 0;
-}
+/* ================= FOOTER ================= */
 
-.footer-links a:hover{
-    color:var(--gold);
-}
-
-.copyright{
+footer{
+    background:#111;
+    color:white;
     text-align:center;
-    border-top:1px solid #333;
-    margin-top:35px;
-    padding-top:18px;
-    font-size:13px;
+    padding:35px 20px;
 }
 
-/* =========================
-   FLOATING WHATSAPP
-========================= */
+footer h3{
+    color:#ffcc00;
+    margin-bottom:8px;
+}
+
+footer p{
+    color:#ccc;
+    font-size:14px;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
 .whatsapp-float{
     position:fixed;
-    right:22px;
-    bottom:22px;
+    right:20px;
+    bottom:20px;
     width:58px;
     height:58px;
-    border-radius:50%;
     background:#25D366;
     color:white;
+    border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
-    box-shadow:0 7px 25px rgba(0,0,0,.25);
-    z-index:9999;
+    text-decoration:none;
+    font-size:29px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:999;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media(max-width:900px){
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .course-grid,
+    .beauty-grid,
+    .language-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .facility-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        flex-direction:column;
+    }
 
     .nav-links{
-        display:none;
-        position:absolute;
-        top:82px;
-        left:0;
-        right:0;
-        background:white;
-        padding:20px;
-        flex-direction:column;
-        box-shadow:0 10px 20px rgba(0,0,0,.1);
+        justify-content:center;
     }
 
-    .nav-links.active{
-        display:flex;
+    .hero-content h1{
+        font-size:34px;
     }
 
-    .menu-btn{
-        display:block;
-    }
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
+    .hero-content h2{
+        font-size:20px;
     }
 
     .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .course-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .language-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:600px){
-
-    .brand-text h2{
-        font-size:17px;
-    }
-
-    .brand img{
-        width:48px;
-        height:48px;
-    }
-
-    .hero{
-        min-height:570px;
-    }
-
-    .hero h1{
-        font-size:40px;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-    section{
-        padding:65px 0;
-    }
-
-    .section-title h2{
-        font-size:30px;
-    }
-
-    .stats-grid,
+    .contact-grid,
     .course-grid,
-    .gallery-grid{
+    .beauty-grid,
+    .language-grid,
+    .gallery-grid,
+    .facility-grid{
         grid-template-columns:1fr;
     }
 
     .stats{
-        margin-top:20px;
+        grid-template-columns:1fr 1fr;
     }
 
-    .about-image img{
-        height:300px;
+    section{
+        padding:50px 5%;
     }
 }
 </style>
@@ -833,1122 +589,962 @@ footer h3{
 
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-    <div class="container">
-        <span>ROHI VTTI Multan</span>
-        <span>Affiliated with NAVTTC • Skills for a Better Future</span>
-    </div>
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="navbar">
+
+<div class="logo-area">
+<img src="rohi-logo.png" alt="ROHI VTTI Logo">
+
+<div class="logo-text">
+<h2>ROHI VTTI</h2>
+<span>NAVTTC Training Partner Institute</span>
+</div>
 </div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-inner">
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#beauty">Beauty</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-        <a href="#home" class="brand">
-            <img src="rohi-logo.png" alt="ROHI VTTI Logo">
-            <div class="brand-text">
-                <h2>ROHI VTTI</h2>
-                <span>NAVTTC Training Partner Institute</span>
-            </div>
-        </a>
+</div>
+</header>
 
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-        <div class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#courses">Courses</a>
-            <a href="#languages">Languages</a>
-            <a href="#admission">Admissions</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-            <a href="#admission" class="nav-btn">Apply Now</a>
-        </div>
+<!-- ================= HERO ================= -->
 
-    </div>
-</nav>
-
-<!-- HERO -->
 <section class="hero" id="home">
-    <div class="container">
-        <div class="hero-content">
 
-            <span class="hero-badge">FREE SKILL DEVELOPMENT COURSES</span>
+<div class="hero-content">
 
-            <h1>
-                Learn Skills.<br>
-                <span>Build Your Future.</span>
-            </h1>
+<h1>ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
 
-            <p>
-                ROHI Vocational & Technical Training Institute Multan
-                is providing professional skill-based training opportunities
-                in collaboration with NAVTTC.
-            </p>
+<h2>Affiliated with NAVTTC</h2>
 
-            <div class="hero-buttons">
-                <a href="#courses" class="btn btn-green">Explore Courses</a>
-                <a href="#admission" class="btn btn-white">Admission Open</a>
-            </div>
+<p>
+Learn professional skills, build your career and prepare yourself
+for modern employment and freelancing opportunities.
+</p>
 
-        </div>
-    </div>
-</section>
+<a href="#courses" class="btn">Explore Courses</a>
 
-<!-- STATS -->
-<div class="stats">
-    <div class="container stats-grid">
+<a href="https://wa.me/923020757793" target="_blank" class="btn">
+WhatsApp Admission
+</a>
 
-        <div class="stat">
-            <h3>100%</h3>
-            <p>Free Courses</p>
-        </div>
-
-        <div class="stat">
-            <h3>18–40</h3>
-            <p>Age Range</p>
-        </div>
-
-        <div class="stat">
-            <h3>6+</h3>
-            <p>Skill Categories</p>
-        </div>
-
-        <div class="stat">
-            <h3>NAVTTC</h3>
-            <p>Training Partner</p>
-        </div>
-
-    </div>
 </div>
 
-<!-- ABOUT -->
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats">
+
+<div class="stat">
+<h3>11+</h3>
+<p>Professional Courses</p>
+</div>
+
+<div class="stat">
+<h3>3 Months</h3>
+<p>Course Duration</p>
+</div>
+
+<div class="stat">
+<h3>Free</h3>
+<p>Selected Courses</p>
+</div>
+
+<div class="stat">
+<h3>NAVTTC</h3>
+<p>Training Partner</p>
+</div>
+
+</div>
+
+
+<!-- ================= ABOUT ================= -->
+
 <section class="about" id="about">
-    <div class="container">
 
-        <div class="about-grid">
+<div class="container">
 
-            <div class="about-image">
-                <img src="main-building.jpg" alt="ROHI VTTI Building">
-            </div>
+<div class="section-title">
+<h2>About ROHI VTTI</h2>
+<p>Professional Skills Development & Technical Training</p>
+</div>
 
-            <div class="about-content">
+<div class="about-grid">
 
-                <span>ABOUT ROHI VTTI</span>
+<div class="about-img">
+<img src="main-building.jpg" alt="ROHI VTTI Building">
+</div>
 
-                <h2>Skills That Create Opportunities</h2>
+<div class="about-text">
 
-                <p>
-                    ROHI Vocational & Technical Training Institute is a
-                    professional training institute in Multan focused on
-                    practical skills, digital education and vocational
-                    development.
-                </p>
+<h3>ROHI Vocational & Technical Training Institute</h3>
 
-                <p>
-                    Our goal is to help students learn useful skills that
-                    can support employment, freelancing, entrepreneurship
-                    and future career opportunities.
-                </p>
+<p>
+ROHI VTTI is a professional vocational and technical training
+institute affiliated with NAVTTC, providing practical skills and
+career-focused training.
+</p>
 
-                <ul class="check-list">
-                    <li>Free Skill Development Courses</li>
-                    <li>Practical & Career-Oriented Training</li>
-                    <li>NAVTTC Affiliated Training Environment</li>
-                    <li>Professional Learning Environment</li>
-                    <li>Computer & Vocational Skills</li>
-                </ul>
+<p>
+Our goal is to equip students with modern technical, digital,
+beauty and language skills that can help them move towards
+employment, entrepreneurship and freelancing.
+</p>
 
-            </div>
+<p>
+We focus on practical learning, professional training,
+experienced teachers and a suitable learning environment.
+</p>
 
-        </div>
+</div>
 
-    </div>
-</section>
-
-<!-- COURSES -->
-<section class="courses" id="courses">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span>Our Programs</span>
-            <h2>Free Courses</h2>
-            <p>
-                Explore our free skill development courses.
-                Click on any course to view complete course details,
-                eligibility and learning areas.
-            </p>
-        </div>
-
-        <div class="course-grid">
-
-            <!-- DIGITAL MARKETING -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="digital-marketing.jpg" alt="Digital Marketing">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-                    <h3>Digital Marketing</h3>
-
-                    <p>
-                        Learn modern digital marketing tools and strategies
-                        for business and freelancing.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Digital Marketing Fundamentals</li>
-                            <li>Social Media Marketing</li>
-                            <li>Facebook & Instagram Marketing</li>
-                            <li>Content Marketing</li>
-                            <li>SEO Basics</li>
-                            <li>Google Marketing Concepts</li>
-                            <li>Online Advertising</li>
-                            <li>Freelancing Basics</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- GRAPHIC DESIGN -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="gallery1.jpg" alt="Graphic Design">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Graphic Design & Video Editing</h3>
-
-                    <p>
-                        Develop creative design and video editing skills
-                        for digital media and freelancing.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Graphic Design Fundamentals</li>
-                            <li>Design Principles</li>
-                            <li>Social Media Designs</li>
-                            <li>Logo & Branding Basics</li>
-                            <li>Image Editing</li>
-                            <li>Video Editing Fundamentals</li>
-                            <li>Content Creation</li>
-                            <li>Freelancing Basics</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- AI FINANCIAL ANALYST -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="comp-lab.jpg" alt="AI Financial Analyst">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>AI Financial Analyst with Power BI</h3>
-
-                    <p>
-                        Learn financial analysis, data visualization and
-                        modern AI-powered analytical tools.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Financial Analysis Basics</li>
-                            <li>Microsoft Excel</li>
-                            <li>Data Analysis</li>
-                            <li>Power BI Fundamentals</li>
-                            <li>Data Visualization</li>
-                            <li>Dashboards & Reports</li>
-                            <li>AI-Assisted Analysis</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- AI FOR EVERYONE -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="web-dev.jpg" alt="AI for Everyone">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>AI for Everyone</h3>
-
-                    <p>
-                        Understand Artificial Intelligence and learn how
-                        modern AI tools can be used in everyday work.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Introduction to Artificial Intelligence</li>
-                            <li>Generative AI</li>
-                            <li>AI Tools</li>
-                            <li>Prompt Engineering</li>
-                            <li>AI for Productivity</li>
-                            <li>AI Content Creation</li>
-                            <li>Responsible AI Usage</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- AI ECOMMERCE -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="amazon.jpg" alt="AI Powered E-Commerce">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>AI Powered E-Commerce</h3>
-
-                    <p>
-                        Learn online business, e-commerce platforms and
-                        AI tools for digital commerce.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>E-Commerce Fundamentals</li>
-                            <li>Online Store Basics</li>
-                            <li>Product Research</li>
-                            <li>Product Listing</li>
-                            <li>Amazon & Online Marketplaces</li>
-                            <li>AI Tools for E-Commerce</li>
-                            <li>Digital Marketing for Stores</li>
-                            <li>Customer Management</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- FREELANCING -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="office-management.jpg" alt="Freelancing">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Income Through Freelancing</h3>
-
-                    <p>
-                        Learn how to build online skills and understand
-                        freelancing platforms and client communication.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Introduction to Freelancing</li>
-                            <li>Finding Online Work</li>
-                            <li>Freelancing Profiles</li>
-                            <li>Client Communication</li>
-                            <li>Proposal Writing</li>
-                            <li>Portfolio Development</li>
-                            <li>Online Payment Concepts</li>
-                            <li>Professional Ethics</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BEAUTY THERAPY -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="beauty.jpg" alt="Beauty Therapy">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Beauty Therapy</h3>
-
-                    <p>
-                        Learn professional beauty care, salon services,
-                        skincare and practical beauty techniques.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">MATRIC</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Basic Beauty Therapy</li>
-                            <li>Facial & Skin Care</li>
-                            <li>Makeup Basics</li>
-                            <li>Hair Care</li>
-                            <li>Salon Hygiene</li>
-                            <li>Client Care</li>
-                            <li>Beauty Tools & Equipment</li>
-                            <li>Practical Salon Training</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Matric or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- HAIR STYLING -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="hair.jpg" alt="Hair Styling">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Hair Styling</h3>
-
-                    <p>
-                        Learn professional hair care, styling and salon
-                        techniques through practical training.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">MATRIC</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Hair Cutting Basics</li>
-                            <li>Hair Styling</li>
-                            <li>Blow Drying</li>
-                            <li>Hair Care</li>
-                            <li>Hair Treatment Basics</li>
-                            <li>Salon Hygiene</li>
-                            <li>Client Consultation</li>
-                            <li>Practical Training</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Matric or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- SKIN CARE -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="skin.jpg" alt="Skin Care">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Skin Care</h3>
-
-                    <p>
-                        Learn basic skincare, facial treatments and
-                        professional salon skin-care practices.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">MATRIC</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Skin Types</li>
-                            <li>Basic Skin Analysis</li>
-                            <li>Facial Treatments</li>
-                            <li>Cleansing & Exfoliation</li>
-                            <li>Skin Hygiene</li>
-                            <li>Basic Skin Care Products</li>
-                            <li>Salon Safety</li>
-                            <li>Practical Skin Care</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Matric or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- NAIL TECHNICIAN -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="nail.jpg" alt="Nail Technician">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Nail Technician</h3>
-
-                    <p>
-                        Learn professional nail care, manicure, pedicure
-                        and basic nail art techniques.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">MATRIC</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>Nail Care Fundamentals</li>
-                            <li>Manicure</li>
-                            <li>Pedicure</li>
-                            <li>Nail Shaping</li>
-                            <li>Nail Hygiene & Safety</li>
-                            <li>Basic Nail Art</li>
-                            <li>Nail Tools & Equipment</li>
-                            <li>Practical Salon Training</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Matric or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- WEB DEVELOPMENT -->
-            <div class="course-card">
-
-                <div class="course-img">
-                    <img src="web-dev.jpg" alt="Web Development">
-                    <span class="free-badge">FREE COURSE</span>
-                </div>
-
-                <div class="course-content">
-
-                    <h3>Web Development</h3>
-
-                    <p>
-                        Learn website development and build modern
-                        responsive websites.
-                    </p>
-
-                    <div class="course-meta">
-                        <span class="meta">FREE</span>
-                        <span class="meta">3 MONTHS</span>
-                        <span class="meta">INTERMEDIATE</span>
-                    </div>
-
-                    <button class="details-btn" onclick="toggleCourse(this)">
-                        View Course Details +
-                    </button>
-
-                </div>
-
-                <div class="course-details">
-                    <div class="course-details-inner">
-
-                        <h4>Course Includes</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Responsive Web Design</li>
-                            <li>JavaScript Basics</li>
-                            <li>Website Layout</li>
-                            <li>Forms & Navigation</li>
-                            <li>GitHub Pages Basics</li>
-                            <li>Practical Website Projects</li>
-                        </ul>
-
-                        <h4>Eligibility</h4>
-                        <p>Intermediate or equivalent.</p>
-
-                        <h4>Course Fee</h4>
-                        <p><strong>FREE</strong></p>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- LANGUAGES -->
-<section class="languages" id="languages">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span>Language Skills</span>
-            <h2>Language Courses</h2>
-            <p>
-                Improve your communication skills and learn new languages
-                for education, employment and future opportunities.
-            </p>
-        </div>
-
-        <div class="language-grid">
-
-            <div class="language-card">
-                <div class="language-icon">🗣️</div>
-                <h3>Spoken English</h3>
-                <p>
-                    Improve everyday English speaking, listening,
-                    vocabulary and communication skills.
-                </p>
-                <span class="eligibility">Eligibility: Matric</span>
-            </div>
-
-            <div class="language-card">
-                <div class="language-icon">🇨🇳</div>
-                <h3>Chinese Language</h3>
-                <p>
-                    Learn basic Chinese communication, vocabulary,
-                    pronunciation and everyday expressions.
-                </p>
-                <span class="eligibility">Eligibility: Matric</span>
-            </div>
-
-            <div class="language-card">
-                <div class="language-icon">🇰🇷</div>
-                <h3>Korean Language</h3>
-                <p>
-                    Learn Korean basics, communication skills,
-                    vocabulary and everyday expressions.
-                </p>
-                <span class="eligibility">Eligibility: Matric</span>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<!-- ADMISSION OPEN -->
-<section class="admission" id="admission">
-
-    <div class="container">
-
-        <div class="admission-box">
-
-            <span class="open-badge">● ADMISSIONS OPEN</span>
-
-            <h2>Admissions Are Open!</h2>
-
-            <p>
-                Enroll in our free skill development courses.
-                For admission, eligibility and complete information,
-                contact ROHI VTTI on WhatsApp.
-            </p>
-
-            <a
-                href="https://wa.me/923020757793?text=Assalam-o-Alaikum%2C%20I%20want%20information%20about%20ROHI%20VTTI%20free%20courses."
-                target="_blank"
-                class="whatsapp-btn">
-                💬 Contact on WhatsApp
-            </a>
-
-        </div>
-
-    </div>
+</div>
+</div>
 
 </section>
 
 
-<!-- GALLERY -->
+<!-- ================= COMPUTER & DIGITAL COURSES ================= -->
+
+<section id="courses">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Computer & Digital Courses</h2>
+<p>Professional and modern skill-based training programs</p>
+</div>
+
+<div class="course-grid">
+
+
+<!-- DIGITAL MARKETING -->
+
+<div class="course-card">
+
+<img src="digital-marketing.jpg" alt="Digital Marketing">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Digital Marketing</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Digital Marketing Fundamentals</li>
+<li>Social Media Marketing</li>
+<li>Facebook & Instagram Marketing</li>
+<li>Content Marketing</li>
+<li>SEO Basics</li>
+<li>Google Marketing Concepts</li>
+<li>Online Advertising</li>
+<li>Freelancing Basics</li>
+<li>Practical Projects</li>
+</ul>
+
+<strong>Everything required for professional digital marketing training.</strong>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- GRAPHIC DESIGN -->
+
+<div class="course-card">
+
+<img src="graphic-design.jpg" alt="Graphic Design & Video Editing">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Graphic Design & Video Editing</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Graphic Design Fundamentals</li>
+<li>Design Principles</li>
+<li>Logo & Branding Basics</li>
+<li>Social Media Posts</li>
+<li>Image Editing</li>
+<li>Video Editing</li>
+<li>Short Video Content</li>
+<li>Professional Portfolio</li>
+<li>Freelancing Basics</li>
+</ul>
+
+<strong>Complete practical training for graphic design and video editing.</strong>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- AI FINANCIAL ANALYST -->
+
+<div class="course-card">
+
+<img src="financial.jpg" alt="AI Financial Analyst">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>AI Financial Analyst with Power BI</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Financial Analysis</li>
+<li>Advanced Excel Concepts</li>
+<li>Data Analysis</li>
+<li>Power BI</li>
+<li>Dashboard Development</li>
+<li>AI-Assisted Financial Analysis</li>
+<li>Reports & Visualization</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- AI FOR EVERYONE -->
+
+<div class="course-card">
+
+<img src="ai.jpg" alt="AI for Everyone">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>AI for Everyone</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Introduction to Artificial Intelligence</li>
+<li>Generative AI</li>
+<li>AI Tools</li>
+<li>Prompt Engineering</li>
+<li>AI for Productivity</li>
+<li>AI Content Creation</li>
+<li>Responsible AI Usage</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- AI ECOMMERCE -->
+
+<div class="course-card">
+
+<img src="ecommerce.jpg" alt="AI Powered E-Commerce">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>AI Powered E-Commerce</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>E-Commerce Fundamentals</li>
+<li>Online Store Basics</li>
+<li>Product Research</li>
+<li>Product Listing</li>
+<li>Marketplace Concepts</li>
+<li>AI Tools for E-Commerce</li>
+<li>Digital Marketing</li>
+<li>Customer Management</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- FREELANCING -->
+
+<div class="course-card">
+
+<img src="freelancing.jpg" alt="Income Through Freelancing">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Income Through Freelancing</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Intermediate
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Freelancing Fundamentals</li>
+<li>Finding Online Work</li>
+<li>Professional Profiles</li>
+<li>Client Communication</li>
+<li>Proposal Writing</li>
+<li>Portfolio Development</li>
+<li>Online Payment Concepts</li>
+<li>Professional Ethics</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- ================= BEAUTY COURSES ================= -->
+
+<section class="beauty-section" id="beauty">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Beauty & Personal Care Courses</h2>
+<p>Professional practical beauty training</p>
+</div>
+
+<div class="beauty-grid">
+
+
+<!-- BEAUTY THERAPY -->
+
+<div class="course-card">
+
+<img src="beauty.jpg" alt="Beauty Therapy">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Beauty Therapy</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Matric
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Beauty Therapy</li>
+<li>Facial & Skin Care</li>
+<li>Makeup Basics</li>
+<li>Hair Care</li>
+<li>Salon Hygiene</li>
+<li>Client Care</li>
+<li>Beauty Tools & Equipment</li>
+<li>Practical Salon Training</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- HAIR -->
+
+<div class="course-card">
+
+<img src="hair.jpg" alt="Hair Styling">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Hair Styling</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Matric
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Hair Cutting Basics</li>
+<li>Hair Styling</li>
+<li>Blow Drying</li>
+<li>Hair Care</li>
+<li>Treatment Basics</li>
+<li>Salon Hygiene</li>
+<li>Client Consultation</li>
+<li>Practical Training</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- SKIN -->
+
+<div class="course-card">
+
+<img src="skin.jpg" alt="Skin Care">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Skin Care</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Matric
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Skin Types</li>
+<li>Skin Analysis</li>
+<li>Facial Techniques</li>
+<li>Cleansing & Exfoliation</li>
+<li>Skin Care Products</li>
+<li>Salon Hygiene</li>
+<li>Safety Procedures</li>
+<li>Practical Training</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- NAIL -->
+
+<div class="course-card">
+
+<img src="nail.jpg" alt="Nail Technician">
+
+<div class="course-content">
+
+<span class="badge">FREE COURSE</span>
+
+<h3>Nail Technician</h3>
+
+<p class="course-info">
+Duration: 3 Months | Eligibility: Matric
+</p>
+
+<button class="details-btn" onclick="toggleCourse(this)">
+View Course Details
+</button>
+
+<div class="course-details">
+
+<ul>
+<li>Nail Care</li>
+<li>Manicure</li>
+<li>Pedicure</li>
+<li>Nail Shaping</li>
+<li>Nail Hygiene & Safety</li>
+<li>Basic Nail Art</li>
+<li>Tools & Equipment</li>
+<li>Practical Training</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- ================= LANGUAGE COURSES ================= -->
+
+<section class="language-section" id="languages">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Language Courses</h2>
+<p>Improve your communication and language skills</p>
+</div>
+
+<div class="language-grid">
+
+<div class="language-card">
+
+<h3>Spoken English</h3>
+
+<p>
+Develop speaking, listening, vocabulary and everyday
+communication skills.
+</p>
+
+<br>
+
+<strong>Eligibility: Matric</strong>
+
+</div>
+
+
+<div class="language-card">
+
+<h3>Chinese Language</h3>
+
+<p>
+Learn basic Chinese communication, vocabulary,
+pronunciation and everyday conversation.
+</p>
+
+<br>
+
+<strong>Eligibility: Matric</strong>
+
+</div>
+
+
+<div class="language-card">
+
+<h3>Korean Language</h3>
+
+<p>
+Learn Korean basics, vocabulary, pronunciation
+and practical communication skills.
+</p>
+
+<br>
+
+<strong>Eligibility: Matric</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= INSTITUTE GALLERY ================= -->
+
 <section class="gallery" id="gallery">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-title">
-            <span>Our Institute</span>
-            <h2>Gallery</h2>
-            <p>
-                A glimpse of ROHI VTTI training facilities and learning environment.
-            </p>
-        </div>
+<div class="section-title">
 
-        <div class="gallery-grid">
+<h2>Institute Gallery</h2>
 
-            <div class="gallery-item">
-                <img src="main-building.jpg" alt="ROHI VTTI Building">
-            </div>
+<p>
+Explore ROHI VTTI facilities, classrooms and professional learning environment.
+</p>
 
-            <div class="gallery-item">
-                <img src="gallery1.jpg" alt="ROHI VTTI">
-            </div>
+</div>
 
-            <div class="gallery-item">
-                <img src="beauty-lab.jpg" alt="Beauty Lab">
-            </div>
+<div class="gallery-grid">
 
-            <div class="gallery-item">
-                <img src="comp-lab.jpg" alt="Computer Lab">
-            </div>
 
-            <div class="gallery-item">
-                <img src="office-management.jpg" alt="Office Management">
-            </div>
+<div class="gallery-item">
 
-            <div class="gallery-item">
-                <img src="amazon.jpg" alt="E-Commerce Training">
-            </div>
+<img src="main-building.jpg" alt="Main View of ROHI VTTI Building">
 
-            <div class="gallery-item">
-                <img src="web-dev.jpg" alt="Web Development">
-            </div>
+<div class="gallery-caption">
+Main View of Building
+</div>
 
-            <div class="gallery-item">
-                <img src="digital-marketing.jpg" alt="Digital Marketing">
-            </div>
+</div>
 
-        </div>
 
-    </div>
+<div class="gallery-item">
+
+<img src="office.jpg" alt="ROHI VTTI Office">
+
+<div class="gallery-caption">
+Institute Office
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="class-room.jpg" alt="ROHI VTTI Class Room">
+
+<div class="gallery-caption">
+Class Rooms
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="ac-class-room.jpg" alt="AC Class Room">
+
+<div class="gallery-caption">
+Air-Conditioned Class Room
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= WHY CHOOSE ROHI ================= -->
+
+<section class="facilities">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Why Choose ROHI VTTI?</h2>
+
+<p>
+A professional learning environment designed for practical skills development.
+</p>
+
+</div>
+
+<div class="facility-grid">
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>Biometric Installation</h3>
+
+<p>
+Modern biometric attendance system for proper student attendance management.
+</p>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>CCTV Cameras & Protection</h3>
+
+<p>
+Security cameras and safety arrangements for a secure training environment.
+</p>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>AC Class Rooms</h3>
+
+<p>
+Comfortable air-conditioned classrooms designed for focused learning.
+</p>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>Professional Training</h3>
+
+<p>
+Practical, career-focused and skill-based professional training.
+</p>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>Highly Experienced Teachers</h3>
+
+<p>
+Training delivered by experienced and professional instructors.
+</p>
+
+</div>
+
+
+<div class="facility">
+
+<div class="facility-icon">✓</div>
+
+<h3>Practical Learning</h3>
+
+<p>
+Hands-on training to help students develop real-world professional skills.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ADMISSIONS ================= -->
+
+<section class="admission">
+
+<div class="container">
+
+<h2>ADMISSIONS OPEN</h2>
+
+<p>
+Admissions are currently open. For admission, eligibility and complete information,
+kindly contact ROHI VTTI on WhatsApp.
+</p>
+
+<a
+href="https://wa.me/923020757793"
+target="_blank"
+class="whatsapp-btn">
+
+<span>☘</span>
+WhatsApp Admission
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
 <section class="contact" id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-title">
-            <span>Get In Touch</span>
-            <h2>Contact ROHI VTTI</h2>
-            <p>
-                Contact us for admission, course information and guidance.
-            </p>
-        </div>
+<div class="section-title">
 
-        <div class="contact-grid">
+<h2>Contact ROHI VTTI</h2>
 
-            <div class="contact-card">
+<p>For admissions and course information</p>
 
-                <h3>Institute Information</h3>
+</div>
 
-                <div class="contact-row">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <strong>Address</strong>
-                        <p>
-                            MUHALLAH SULTAN NAGAR ROHI VTTI
-                            STREET NO 1 INFRONT OF JAMIA MASJID
-                        </p>
-                    </div>
-                </div>
-
-                <div class="contact-row">
-                    <div class="contact-icon">👤</div>
-                    <div>
-                        <strong>Director</strong>
-                        <p>SAMAD JOYIA</p>
-                    </div>
-                </div>
-
-                <div class="contact-row">
-                    <div class="contact-icon">🎓</div>
-                    <div>
-                        <strong>Affiliation</strong>
-                        <p>NAVTTC Training Partner Institute</p>
-                    </div>
-                </div>
-
-            </div>
+<div class="contact-grid">
 
 
-            <div class="contact-card">
+<div class="contact-box">
 
-                <h3>Admission & WhatsApp</h3>
+<h3>Institute Information</h3>
 
-                <div class="contact-row">
-                    <div class="contact-icon">📱</div>
-                    <div>
-                        <strong>WhatsApp</strong>
-                        <p>0302-0757793</p>
-                    </div>
-                </div>
+<p>
+<strong>Institute:</strong><br>
+ROHI Vocational & Technical Training Institute
+</p>
 
-                <div class="contact-row">
-                    <div class="contact-icon">📞</div>
-                    <div>
-                        <strong>Contact</strong>
-                        <p>0317-6231467</p>
-                    </div>
-                </div>
+<p>
+<strong>Affiliation:</strong><br>
+NAVTTC Training Partner Institute
+</p>
 
-                <br>
+<p>
+<strong>Director:</strong><br>
+SAMAD JOYIA
+</p>
 
-                <a
-                    href="https://wa.me/923020757793"
-                    target="_blank"
-                    class="whatsapp-btn">
-                    💬 WhatsApp for Admission
-                </a>
+<p>
+<strong>Address:</strong><br>
+MUHALLAH SULTAN NAGAR ROHI VTTI STREET NO 1
+INFRONT OF JAMIA MASJID
+</p>
 
-            </div>
+</div>
 
-        </div>
 
-    </div>
+<div class="contact-box">
+
+<h3>Contact & WhatsApp</h3>
+
+<p>
+<strong>WhatsApp:</strong><br>
+0302-0757793
+</p>
+
+<p>
+<strong>Contact:</strong><br>
+0317-6231467
+</p>
+
+<a
+href="https://wa.me/923020757793"
+target="_blank"
+class="whatsapp-btn">
+
+WhatsApp Us
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-    <div class="container">
+<h3>ROHI VTTI</h3>
 
-        <div class="footer-grid">
+<p>
+Rohi Vocational & Technical Training Institute
+</p>
 
-            <div class="footer-brand">
-                <h2>ROHI VTTI</h2>
+<p>
+Affiliated with NAVTTC | Professional Skills Development
+</p>
 
-                <p>
-                    Rohi Vocational & Technical Training Institute
-                    affiliated with NAVTTC and focused on practical
-                    skill development and career-oriented training.
-                </p>
-            </div>
-
-            <div>
-                <h3>Quick Links</h3>
-
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#admission">Admissions</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Courses</h3>
-
-                <ul class="footer-links">
-                    <li><a href="#courses">Digital Marketing</a></li>
-                    <li><a href="#courses">Web Development</a></li>
-                    <li><a href="#courses">Beauty Therapy</a></li>
-                    <li><a href="#courses">Nail Technician</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            © 2026 ROHI Vocational & Technical Training Institute.
-            All Rights Reserved.
-        </div>
-
-    </div>
+<p>
+© 2026 ROHI VTTI. All Rights Reserved.
+</p>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- ================= FLOATING WHATSAPP ================= -->
+
 <a
-    class="whatsapp-float"
-    href="https://wa.me/923020757793"
-    target="_blank"
-    aria-label="Contact ROHI VTTI on WhatsApp">
-    💬
+href="https://wa.me/923020757793"
+target="_blank"
+class="whatsapp-float"
+aria-label="WhatsApp">
+
+☘
+
 </a>
 
 
 <script>
 
-/* =========================
-   MOBILE MENU
-========================= */
-function toggleMenu(){
-
-    const menu = document.getElementById("navLinks");
-
-    menu.classList.toggle("active");
-
-}
-
-
-/* =========================
-   COURSE DETAILS ACCORDION
-========================= */
 function toggleCourse(button){
 
     const card = button.closest(".course-card");
-    const details = card.querySelector(".course-details");
 
-    const isOpen = details.style.maxHeight &&
-                   details.style.maxHeight !== "0px";
+    card.classList.toggle("active");
 
-    /* Close all other courses */
-    document.querySelectorAll(".course-details").forEach(item => {
-        item.style.maxHeight = null;
-    });
-
-    document.querySelectorAll(".details-btn").forEach(btn => {
-        btn.textContent = "View Course Details +";
-    });
-
-    /* Open selected course */
-    if(!isOpen){
-
-        details.style.maxHeight = details.scrollHeight + "px";
-
-        button.textContent = "Hide Course Details −";
-
+    if(card.classList.contains("active")){
+        button.innerText = "Hide Course Details";
+    }else{
+        button.innerText = "View Course Details";
     }
 
 }
-
-
-/* =========================
-   CLOSE MOBILE MENU
-========================= */
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", function(){
-
-        document.getElementById("navLinks").classList.remove("active");
-
-    });
-
-});
 
 </script>
 
 </body>
 </html>
 ```
+
 
