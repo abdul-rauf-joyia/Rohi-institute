@@ -1,188 +1,208 @@
-<!DOCTYPE html>
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohi Vocational Technical Training Institute | Multan</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>ROHI VTTI | Vocational & Technical Training Institute | Multan</title>
+
+    <meta name="description"
+          content="ROHI Vocational & Technical Training Institute Multan - NAVTTC affiliated training institute offering professional technical, IT and beauty courses.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
-        :root { --primary: #004a99; --secondary: #28a745; --dark: #1a1a1a; --light: #f8f9fa; --gold: #ffcc00; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; scroll-behavior: smooth; padding-bottom: 80px; }
-        
-        /* Notice Bar */
-        .notice-bar { background: #ff3333; color: white; padding: 10px; font-weight: bold; text-align: center; }
 
-        /* Header */
-        header { background: var(--primary); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
-        .header-text { text-align: center; flex: 1; min-width: 300px; }
-        .logo-img { height: 70px; width: auto; background: white; border-radius: 5px; padding: 5px; }
+        /* =========================
+           ROOT
+        ========================= */
 
-        /* Hero */
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main-building.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
-        .hero-content h2 { font-size: 2.5em; color: var(--gold); }
-
- 
-
-        /* Gallery */
-        .section-title { text-align: center; margin: 50px 0 20px; font-size: 2em; color: var(--dark); text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
-        .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #fff; }
-        .gallery-item { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; border: 4px solid white; }
-        .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
-        .gallery-item p { margin: 0; padding: 10px; text-align: center; font-weight: bold; color: var(--primary); }
-
-        /* Status Box */
-        .status-container { max-width: 700px; margin: 40px auto; background: #fff1f1; padding: 30px; border-radius: 20px; border: 2px dashed #ff3333; text-align: center; }
-
-        /* Courses */
-        .course-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; }
-        .course-card { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 280px; overflow: hidden; position: relative; }
-        .course-card img { width: 100%; height: 180px; object-fit: cover; }
-        .free-tag { position: absolute; top: 10px; right: 10px; background: var(--secondary); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.8em; }
-        .duration-tag { color: var(--primary); font-weight: bold; display: block; margin-top: 10px; font-size: 0.9em; }
-
-        /* WhatsApp Fixed Button */
-        .whatsapp-btn { 
-            position: fixed; bottom: 30px; right: 25px; 
-            background-color: #25d366; width: 60px; height: 60px; 
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; 
-            text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
-            z-index: 99999; transition: 0.3s ease; 
+        :root {
+            --primary: #004a99;
+            --primary-dark: #00356f;
+            --secondary: #28a745;
+            --secondary-dark: #1e7e34;
+            --gold: #ffcc00;
+            --dark: #101828;
+            --text: #344054;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --danger: #ef4444;
+            --border: #e4e7ec;
         }
-        .whatsapp-btn:hover { transform: scale(1.1); background-color: #128c7e; }
-        .whatsapp-btn i { color: white; font-size: 35px; }
 
-        @media (max-width: 600px) { header { flex-direction: column; gap: 15px; } .logo-img { height: 50px; } }
-    </style>
-</head>
-<body>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="notice-bar">
-    <marquee>⚠️ Batch 3 classes are currently in progress. Admissions are CLOSED. Stay tuned for Batch 4!</marquee>
-</div>
+        html {
+            scroll-behavior: smooth;
+        }
 
-<header>
-    <img src="rohi-logo.png" onerror="this.src='https://placehold.co'" alt="Rohi Logo" class="logo-img">
-    <div class="header-text">
-        <h1>ROHI VOCATIONAL & TECHNICAL TRAINING INSTITUTE</h1>
-        <p>Affiliated with <strong>NAVTTC & PM-SYD</strong></p>
-    </div>
-    <img src="navttc-logo.png" onerror="this.src='https://navttc.gov.pk'" alt="NAVTTC Logo" class="logo-img">
-</header>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: #fff;
+            line-height: 1.7;
+        }
 
-<section class="hero">
-    <div class="hero-content">
-        <h2>Our Aim: Skill Empowerment</h2>
-        <p>Globally recognized certificates under PM-SYD (Govt. of Pakistan). Hunar mand jawan, khush-haal Pakistan!</p>
-    </div>
-</section>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
- </section>
-<!-- Gallery -->
-<div class="section-title">Institute Gallery</div>
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-<div class="gallery-grid">
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
 
-    <div class="gallery-item">
-        <img src="gallery1.jpg" alt="Director">
-        <p>Director Samad Joyia</p>
-    </div>
 
-    <div class="gallery-item">
-        <img src="beauty-lab.jpg" alt="Beauty Lab">
-        <p>Professional Beauty Lab</p>
-    </div>
+        /* =========================
+           TOP BAR
+        ========================= */
 
-    <div class="gallery-item">
-        <img src="comp-lab.jpg" alt="Computer Lab">
-        <p>IT & Computer Lab</p>
-    </div>
+        .top-bar {
+            background: var(--dark);
+            color: #fff;
+            padding: 8px 0;
+            font-size: 13px;
+        }
 
-    <div class="gallery-item">
-        <img src="biometric.jpg" alt="Biometric Attendance">
-        <p>Biometric Attendance System</p>
-    </div>
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
 
-    <div class="gallery-item">
-        <img src="fire-extinguisher.jpg" alt="Fire Safety">
-        <p>Fire Extinguisher Safety</p>
-    </div>
+        .top-bar span {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
 
-</div>
 
-<!-- Status -->
-<div class="section-title">Admission Status</div>
-<div class="status-container">
-    <h2 style="color: #ff3333;">Registration CLOSED (Batch 3 in Progress)</h2>
-    <p>Age Limit: 18 - 40 Years | Search "Rohi VTTI" on Google Maps</p>
-</div>
+        /* =========================
+           NOTICE BAR
+        ========================= */
 
-<!-- IT Courses -->
-<div class="section-title">IT & Management Courses (3 Months)</div>
-<section class="course-group">
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="office-management.jpg" alt="Office">
-        <div style="padding: 15px; text-align: center;"><h3>Office Management</h3><span class="duration-tag">Duration: 3 Months</span></div>
-    </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="amazon.jpg" alt="Amazon">
-        <div style="padding: 15px; text-align: center;"><h3>Amazon (E-com)</h3><span class="duration-tag">Duration: 3 Months</span></div>
-    </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="web-dev.jpg" alt="Web">
-        <div style="padding: 15px; text-align: center;"><h3>Web Development</h3><span class="duration-tag">Duration: 3 Months</span></div>
-    </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="digital-marketing.jpg" alt="Digital">
-        <div style="padding: 15px; text-align: center;"><h3>Digital Marketing</h3><span class="duration-tag">Duration: 3 Months</span></div>
-    </div>
-</section>
+        .notice-bar {
+            background: linear-gradient(90deg, #d90429, #ef233c);
+            color: #fff;
+            overflow: hidden;
+            font-weight: 600;
+        }
 
-<!-- Beauty Courses -->
-<div class="section-title">Beauty & Styling Courses (6 Months)</div>
-<section class="course-group" style="background: #fff;">
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="beauty.jpg" alt="Beauty">
-        <div style="padding: 15px; text-align: center;"><h3>Beauty Therapy</h3><span class="duration-tag">Duration: 6 Months</span></div>
-    </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="hair.jpg" alt="Hair">
-        <div style="padding: 15px; text-align: center;"><h3>Hair Styling</h3><span class="duration-tag">Duration: 6 Months</span></div>
-    </div>
-    <div class="course-card">
-        <span class="free-tag">Govt. FREE</span>
-        <img src="skin.jpg" alt="Skin">
-        <div style="padding: 15px; text-align: center;"><h3>Skin Care</h3><span class="duration-tag">Duration: 6 Months</span></div>
-    </div>
-</section>
+        .notice-inner {
+            padding: 8px 0;
+            text-align: center;
+            font-size: 14px;
+        }
 
-<!-- Contact Footer -->
-<section style="background: var(--dark); color: white; padding: 40px; text-align: center;">
-    <h2 style="color: var(--gold);">Contact Rohi VTTI</h2>
-    <p>Director: Samad Joyia | Phone: 0302-0757793</p>
-    <p>Samad House, St 1, Vehari Road, Multan.</p>
-</section>
 
-<footer style="background: #111; color: #888; text-align: center; padding: 20px;">
-    &copy; 2026 Rohi VTTI | PM-SYD Technical Partner
-</footer>
+        /* =========================
+           NAVBAR
+        ========================= */
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/923020757793" class="whatsapp-btn" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0,0,0,.06);
+        }
 
- 
- 
+        .navbar {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
 
-    <p style="color:#ffcc00;font-size:15px;margin-top:10px;">
-        This website is designed by <strong>ABDUL-RAUF JOYIA</strong>
-    </p>
-</footer>
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            height: 58px;
+            width: auto;
+        }
+
+        .brand-text h2 {
+            color: var(--primary);
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .brand-text span {
+            color: var(--secondary);
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--dark);
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white !important;
+            padding: 11px 20px;
+            border-radius: 8px;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary-dark);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg,
+                rgba(0,30,65,.94),
+                rgba(0,74,153,.68),
+                rgba(0,0,0,.40)),
+                url('main-building.jpg');
+```
