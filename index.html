@@ -22,7 +22,7 @@ a{color:inherit}
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(228,235,229,.9)}
 .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:230px}
-.brand img{width:58px;height:58px;object-fit:contain;border-radius:14px;background:#fff}.gov-strip{background:#fff;border-top:1px solid #edf1ec;border-bottom:1px solid var(--line);padding:8px 0}.gov-strip .container{display:flex;justify-content:center;align-items:center}.gov-strip img{width:min(390px,90%);height:76px;object-fit:contain;display:block}
+.brand-mark{width:58px;height:58px;flex:0 0 58px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#075344,#063b32);border:2px solid #d9ad52;color:#f3d88e;font:800 21px Manrope,sans-serif;letter-spacing:-1px;box-shadow:0 5px 14px rgba(8,54,43,.14)}.gov-strip{background:#fff;border-top:1px solid #edf1ec;border-bottom:1px solid var(--line);padding:12px 0}.gov-strip .container{display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap}.gov-logo{height:78px;width:auto;max-width:190px;object-fit:contain;display:block}.gov-program{display:flex;flex-direction:column;justify-content:center;gap:5px;border-left:1px solid var(--line);padding-left:20px;color:var(--deep);font:800 12px Manrope,sans-serif;letter-spacing:.4px}.gov-program strong{display:block;color:var(--green2);font-size:14px}
 .brand strong{display:block;font:800 19px Manrope,sans-serif;color:var(--deep);letter-spacing:.3px;line-height:1.2}
 .brand small{font-size:10px;color:var(--green2);font-weight:800;letter-spacing:1.15px;text-transform:uppercase}
 .navlinks{display:flex;align-items:center;gap:4px;list-style:none}
@@ -131,12 +131,12 @@ footer{background:#042c25;color:#d8e6dd;padding:38px 0 22px}
 <body>
 <div class="topline"><div class="container"><span>📍 Muhallah Sultan Nagar, ROHI VTTI Street No. 1, Multan</span><span>NAVTTC Training Partner Institute</span></div></div>
 <header><nav class="nav container" aria-label="Main navigation">
-<a class="brand" href="#home"><img src="rohi-logo.png" alt="ROHI VTTI logo"><span><strong>ROHI VTTI</strong><small>Skills • Training • Opportunity</small></span></a>
+<a class="brand" href="#home"><span class="brand-mark" aria-label="ROHI monogram">RH</span><span><strong>ROHI VTTI</strong><small>Skills • Training • Opportunity</small></span></a>
 <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
 <ul class="navlinks" id="navLinks">
 <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#courses">Digital Skills</a></li><li><a href="#beauty">Beauty</a></li><li><a href="#languages">Languages</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li><li><a class="nav-cta" href="#contact">Get in Touch ↗</a></li>
 </ul></nav></header>
-<div class="gov-strip" aria-label="Government programme and NAVTTC partner logos"><div class="container"><img src="rohi-gov-logos.jpg" alt="NAVTTC, Prime Minister Youth Programme and Government of Punjab logos"></div></div>
+<div class="gov-strip" aria-label="NAVTTC and skills programme information"><div class="container"><img class="gov-logo" src="https://dailytimes.com.pk/assets/uploads/2022/04/28/logo.png" alt="NAVTTC emblem" loading="eager" onerror="this.style.display='none'"><div class="gov-program"><span>IN PARTNERSHIP WITH</span><strong>Prime Minister’s Youth Skills<br>Development Programme</strong></div></div></div>
 <main>
 <section class="hero" id="home"><div class="container"><div class="hero-content">
 <span class="eyebrow">NAVTTC Training Partner Institute</span>
