@@ -166,6 +166,16 @@ footer{background:#042c25;color:#d8e6dd;padding:38px 0 22px}
 @media(max-width:900px){.campus-gallery .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.campus-gallery .gallery-grid{grid-template-columns:1fr}.campus-gallery .gallery-item img{height:230px}.brand-logo{width:46px;height:46px;flex-basis:46px}}
 
+
+/* Real campus photographs: responsive, no missing-image placeholders */
+.campus-gallery .gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.campus-gallery .gallery-item{min-width:0}
+.campus-gallery .gallery-item img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#f1f5f1}
+.campus-gallery .gallery-item:first-child{grid-column:span 2}
+.campus-gallery .gallery-item:first-child img{aspect-ratio:8/3;object-fit:contain;background:#eef3ee}
+@media(max-width:900px){.campus-gallery .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.campus-gallery .gallery-item:first-child{grid-column:span 2}}
+@media(max-width:560px){.campus-gallery .gallery-grid{grid-template-columns:1fr}.campus-gallery .gallery-item:first-child{grid-column:span 1}.campus-gallery .gallery-item img{height:auto;aspect-ratio:4/3}.campus-gallery .gallery-item:first-child img{aspect-ratio:8/3}}
+
 </style>
 </head>
 <body>
@@ -229,11 +239,11 @@ footer{background:#042c25;color:#d8e6dd;padding:38px 0 22px}
 </div></div></section>
 <section id="gallery" class="campus-gallery"><div class="container"><div class="section-head"><span class="kicker">Inside ROHI VTTI</span><h2>Our Labs &amp; Training Facilities</h2><p>Real photographs of our computer labs, beauty training rooms and institute office.</p></div>
 <div class="gallery-grid">
-<article class="gallery-item"><img src="assets/computer-lab-1.jpg" alt="ROHI computer lab 1, two views combined" loading="lazy"><div class="gallery-caption"><h3>Computer Lab 1</h3><p>Hands-on digital skills and computer training</p></div></article>
-<article class="gallery-item"><img src="assets/computer-lab-2.jpg" alt="ROHI second computer training laboratory" loading="lazy"><div class="gallery-caption"><h3>Computer Lab 2</h3><p>Practical computer learning environment</p></div></article>
-<article class="gallery-item"><img src="assets/beauty-lab-1.jpg" alt="ROHI beautician training lab one" loading="lazy"><div class="gallery-caption"><h3>Beauty Training Lab 1</h3><p>Makeup and beauty skills practice area</p></div></article>
-<article class="gallery-item"><img src="assets/beauty-lab-2.jpg" alt="ROHI beautician training lab two" loading="lazy"><div class="gallery-caption"><h3>Beauty Training Lab 2</h3><p>Hair styling and practical beauty training</p></div></article>
-<article class="gallery-item"><img src="assets/office.jpg" alt="ROHI VTTI institute office" loading="lazy"><div class="gallery-caption"><h3>Institute Office</h3><p>Student support and administration</p></div></article>
+<article class="gallery-item"><img src="assets/computer-lab-1-combined.jpg" alt="ROHI Computer Lab 1, two real views combined" loading="eager" fetchpriority="high" decoding="async"><div class="gallery-caption"><h3>Computer Lab 1</h3><p>Hands-on digital skills and computer training</p></div></article>
+<article class="gallery-item"><img src="assets/computer-lab-2.jpg" alt="ROHI Computer Lab 2" loading="lazy" decoding="async"><div class="gallery-caption"><h3>Computer Lab 2</h3><p>Practical computer learning environment</p></div></article>
+<article class="gallery-item"><img src="assets/beauty-lab-1.jpg" alt="ROHI Beauty Training Lab 1" loading="lazy" decoding="async"><div class="gallery-caption"><h3>Beauty Training Lab 1</h3><p>Makeup and beauty skills practice area</p></div></article>
+<article class="gallery-item"><img src="assets/beauty-lab-2.jpg" alt="ROHI Beauty Training Lab 2" loading="lazy" decoding="async"><div class="gallery-caption"><h3>Beauty Training Lab 2</h3><p>Hair styling and practical beauty training</p></div></article>
+<article class="gallery-item"><img src="assets/office.jpg" alt="ROHI VTTI Institute Office" loading="lazy" decoding="async"><div class="gallery-caption"><h3>Institute Office</h3><p>Student support and administration</p></div></article>
 </div></div></section>
 <section class="why"><div class="container"><div class="section-head"><span class="kicker">The ROHI learning experience</span><h2>Why Choose ROHI VTTI?</h2><p>Focused on practical knowledge, personal development and useful skills.</p></div>
 <div class="why-grid">
