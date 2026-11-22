@@ -40,6 +40,20 @@
     @media(max-width:480px){.identity-inner{justify-content:space-around}.identity-item{font-size:10px}.identity-item span small{font-size:9px}.checks{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.gallery-card img{height:205px}.language-photo{height:190px}.language-copy{padding:16px}.language-copy h3{font-size:19px}.language-points{gap:5px}.hero h1{font-size:39px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
+
+  <style>
+    .partner-logo-section{background:#fff;border-bottom:1px solid var(--line);padding:22px 0 25px}
+    .partner-logo-heading{text-align:center;color:var(--forest2);font:800 11px Manrope,sans-serif;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 15px}
+    .partner-logo-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:stretch}
+    .partner-logo-card{min-width:0;min-height:112px;padding:12px 10px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center}
+    .partner-logo-frame{width:100%;height:66px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .partner-logo-frame img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+    .partner-logo-fallback{font-size:11px;font-weight:800;line-height:1.35;color:#748178}
+    .partner-logo-card small{font-size:10px;line-height:1.35;font-weight:800;color:var(--forest2)}
+    @media(max-width:760px){.partner-logo-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.partner-logo-card{min-height:100px;padding:9px 7px}.partner-logo-frame{height:58px}}
+    @media(max-width:480px){.partner-logo-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-logo-card:last-child{grid-column:1/-1;max-width:calc(50% - 5px);width:100%;justify-self:center}}
+  </style>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"EducationalOrganization","name":"ROHI Vocational & Technical Training Institute","alternateName":"ROHI VTTI","address":{"@type":"PostalAddress","streetAddress":"Muhallah Sultan Nagar, ROHI VTTI Street No. 1, In Front of Jamia Masjid","addressLocality":"Multan","addressRegion":"Punjab","addressCountry":"PK"},"telephone":["+923020757793","+923176231467","+923287636129"],"url":"https://abdul-rauf-joyia.github.io/Rohi-institute/"}
   </script>
@@ -53,6 +67,20 @@
       <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#digital">Digital Skills</a></li><li><a href="#beauty">Beauty</a></li><li><a href="#languages">Languages</a></li><li><a href="#gallery">Facilities</a></li><li><a class="cta" href="#contact">Contact Us ↗</a></li>
     </ul>
   </nav></header>
+
+  <section class="partner-logo-section" aria-label="Institute and government partner logos">
+    <div class="container">
+      <h2 class="partner-logo-heading">Institute &amp; Government Partners</h2>
+      <div class="partner-logo-strip">
+        <div class="partner-logo-card"><div class="partner-logo-frame"><img src="rohi-vtti-logo.png" alt="ROHI Vocational and Technical Training Institute logo" onerror="this.style.display='none'" onload="this.nextElementSibling.style.display='none'"><span class="partner-logo-fallback">Upload: rohi-vtti-logo.png</span></div><small>ROHI Vocational &amp; Technical Training Institute</small></div>
+        <div class="partner-logo-card"><div class="partner-logo-frame"><img src="navttc-logo.png" alt="NAVTTC logo" onerror="this.style.display='none'" onload="this.nextElementSibling.style.display='none'"><span class="partner-logo-fallback">Upload: navttc-logo.png</span></div><small>National Vocational &amp; Technical Training Commission (NAVTTC)</small></div>
+        <div class="partner-logo-card"><div class="partner-logo-frame"><img src="prime-minister-youth-skill-development-program-logo.png" alt="Prime Minister's Youth Skill Development Program logo" onerror="this.style.display='none'" onload="this.nextElementSibling.style.display='none'"><span class="partner-logo-fallback">Upload: prime-minister-youth-skill-development-program-logo.png</span></div><small>Prime Minister’s Youth Skill Development Program</small></div>
+        <div class="partner-logo-card"><div class="partner-logo-frame"><img src="pakistan-emblem.png" alt="Pakistan state emblem" onerror="this.style.display='none'" onload="this.nextElementSibling.style.display='none'"><span class="partner-logo-fallback">Upload: pakistan-emblem.png</span></div><small>Pakistan Emblem</small></div>
+        <div class="partner-logo-card"><div class="partner-logo-frame"><img src="government-of-pakistan-logo.png" alt="Government of Pakistan logo" onerror="this.style.display='none'" onload="this.nextElementSibling.style.display='none'"><span class="partner-logo-fallback">Upload: government-of-pakistan-logo.png</span></div><small>Government of Pakistan</small></div>
+      </div>
+    </div>
+  </section>
+
   
 <main>
     <section class="hero" id="home"><div class="container"><div class="hero-content">
